@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 65px auto;
+  grid-template-rows: 100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: $bg-color-primary;
+  padding: 0 5%;
+
+  .menu {
+    color: $color-secondary;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+
+    &__item {
+      transition: all 0.35s;
+
+      &:not(:first-child)::before {
+        color: #ebebeb;
+        content: "/";
+        display: inline-block;
+        margin: 0 8px;
+      }
+
+      &:hover {
+        color: #ebebeb;
+      }
+    }
+  }
+}
