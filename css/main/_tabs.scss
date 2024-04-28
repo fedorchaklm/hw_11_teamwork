@@ -1,0 +1,138 @@
+@use "../variables" as *;
+
+.main {
+    padding-top: 110px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 950px;
+    width: 100%;
+    background-color: $bg-color-primary;
+    border-radius: 12px;
+    margin: 0 20px;
+    padding: 40px 50px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+
+    .tabs__title {
+        color: $color-primary;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin:0 700px 20px 0;
+    }
+
+    .tabs__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tabs__list {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 20%;
+            margin-right: 50px;
+
+            label {
+                height: 60px;
+                font-size: 22px;
+                font-weight: 500;
+                border-radius: 12px;
+                line-height: 60px;
+                cursor: pointer;
+                padding-left: 25px;
+                color: $color-secondary;
+                z-index: 12;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .indicator {
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $bg-color-special;
+            border-radius: 12px;
+            transition: all .2s;
+        }
+
+        .tabs__section {
+            width: 80%;
+            height: 100%;
+
+            .text {
+                text-indent: 20px;
+                color: $color-primary;
+                display: none;
+            }
+
+            .home {
+                display: block;
+            }
+
+            .tabs__section-title {
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    input {
+    display: none;
+    }
+}
+
+#home:checked ~ .tabs__list .home,
+#blog:checked ~ .tabs__list .blog,
+#help:checked ~ .tabs__list .help,
+#code:checked ~ .tabs__list .code,
+#about:checked ~ .tabs__list .about {
+    color: $color-additional;
+}
+
+#home:checked ~ .tabs__list .indicator{
+    top: 0;
+}
+
+#blog:checked ~ .tabs__list .indicator{
+    top: 60px;
+}
+
+#help:checked ~ .tabs__list .indicator{
+    top: 120px;
+}
+#code:checked ~ .tabs__list .indicator{
+    top: 180px;
+}
+#about:checked ~ .tabs__list .indicator{
+    top: 240px;
+}
+
+#home:checked ~ .tabs__section .home,
+#blog:checked ~ .tabs__section .blog,
+#help:checked ~ .tabs__section .help,
+#code:checked ~ .tabs__section .code,
+#about:checked ~ .tabs__section .about {
+    display: block;
+}
+
+#blog:checked ~ .tabs__section .home,
+#help:checked ~ .tabs__section .home,
+#code:checked ~ .tabs__section .home,
+#about:checked ~ .tabs__section .home {
+    display: none;
+}
