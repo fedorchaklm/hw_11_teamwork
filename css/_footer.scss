@@ -29,13 +29,13 @@
   .socials {
     grid-column: 3 / 4;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
     row-gap: 20px;
 
-    &__heading {
-      grid-column: 1 / 4;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
     }
 
     .fa-brands {
