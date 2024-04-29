@@ -1,0 +1,60 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 20px;
+  height: 200px;
+  padding: 30px 5% 10px 5%;
+  color: $color-primary;
+  background-color: $bg-color-primary;
+  font-family: "Times New Roman", Times, serif;
+
+  .contacts {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .btn-cta {
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $bg-color-primary;
+    background-color: $color-secondary;
+    cursor: pointer;
+  }
+
+  .socials {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+
+    &__heading {
+      grid-column: 1 / 4;
+    }
+
+    .fa-brands {
+      color: $color-secondary;
+    }
+  }
+
+  .faq {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-self: center;
+  }
+
+  .policy {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: center;
+    font-size: 0.8rem;
+    color: grey;
+  }
+}
