@@ -3,23 +3,22 @@ window.addEventListener("scroll", function (e) {
 });
 
 const modalTrigger = document.querySelector("#open");
-console.log(modalTrigger);
 const modal = document.querySelector(".modal");
-console.log(modal);
 const modalCloseBtn = document.querySelector("#close");
-console.log(modalCloseBtn);
 
-modalTrigger.addEventListener("click", function () {
+function openModal() {
   modal.classList.add("show");
   modal.classList.remove("hide");
   document.body.style.overflow = "hidden";
-});
+  clearInterval(modalTimerId);
+}
 
 function closeModal() {
   modal.classList.add("hide");
   modal.classList.remove("show");
   document.body.style.overflow = "";
 }
+modalTrigger.addEventListener("click", openModal);
 
 modalCloseBtn.addEventListener("click", closeModal);
 
@@ -34,3 +33,5 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+const modalTimerId = setInterval(openModal, 3000);
