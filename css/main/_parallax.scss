@@ -1,7 +1,3 @@
-:root {
-  --index: calc(1vw + 1vh);
-}
-
 .layers-wrap {
   position: relative;
   margin-top: 100px;
@@ -25,7 +21,7 @@
       // z-index: 2;
     }
 
-    .layer__header {
+    .layers__header {
       z-index: 1;
       transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
       will-change: transform;
@@ -36,14 +32,14 @@
       text-shadow: 0 0 15px #1dbb52;
 
       .layers__title {
-        font-size: calc(var(--index) * 2.5);
-        letter-spacing: calc(var(--index) / 2.25);
+        font-size: calc($index * 2.5);
+        letter-spacing: calc($index / 2.25);
       }
 
       .layers__caption {
-        font-size: calc(var(--index) / 1.175);
-        letter-spacing: calc(var(--index) / 3.5);
-        margin-top: calc(var(--index) * (0.75));
+        font-size: calc($index / 1.175);
+        letter-spacing: calc($index / 3.5);
+        margin-bottom: calc($index * (0.75));
         // margin-top: calc(var(--index) * (-0.75));
       }
     }
