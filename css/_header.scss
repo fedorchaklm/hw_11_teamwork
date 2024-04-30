@@ -1,5 +1,7 @@
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 65px auto;
   grid-template-rows: 100px;
@@ -9,6 +11,13 @@
   font-size: 1.2rem;
   background-color: $bg-color-primary;
   padding: 0 5%;
+  z-index: 10;
+
+  .logo {
+    width: 80px;
+    height: 60px;
+    background-color: $color-secondary;
+  }
 
   .menu {
     color: $color-secondary;

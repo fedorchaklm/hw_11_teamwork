@@ -17,13 +17,18 @@
   }
 
   .btn-cta {
+    justify-self: center;
+    width: 20%;
     height: 40px;
-    border-radius: 12px;
+    min-width: 250px;
+    padding: 0 10%;
+    border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
     color: $bg-color-primary;
     background-color: $color-secondary;
     cursor: pointer;
+    white-space: nowrap;
   }
 
   .socials {
