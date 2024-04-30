@@ -1,0 +1,60 @@
+.slider {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+  }
+
+  .imgs {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    // margin: 0 auto;
+
+    img {
+      position: absolute;
+      opacity: 0;
+      transition: all 0.6s;
+      width: 100%;
+      height: 400px;
+    }
+
+    .current {
+      opacity: 1;
+    }
+  }
+
+  .buttons {
+    text-align: center;
+
+    button {
+      margin: 20px 50px 0;
+      width: 75px;
+      height: 75px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      transition: all 0.3s;
+
+      &:active {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .prev {
+      background: url("../images/arrow_left.svg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .next {
+      background: url("../images/arrow_right.svg") center center no-repeat;
+      background-size: cover;
+    }
+  }
+}

@@ -1,8 +1,13 @@
 @forward "tabs";
 @import "parallax";
+@import "slider";
+@import "offers";
+
+
 
 
 .main {
   // padding: 120px 10% 10px 10%;
   background-color: $color-primary;
+  min-height: 100vh;
 }
