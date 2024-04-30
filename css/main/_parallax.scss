@@ -1,6 +1,6 @@
 .layers-wrap {
   position: relative;
-  margin-top: 100px;
+  // margin-top: 100px;
 
   .layers {
     position: relative;
@@ -29,14 +29,14 @@
       color: #fff;
       line-height: 1.55;
       font-weight: 700;
-      text-shadow: 0 0 15px #1dbb52;
+      text-shadow: 0 0 15px $color-secondary;
 
-      .layers__title {
+      .layers__caption {
         font-size: calc($index * 2.5);
         letter-spacing: calc($index / 2.25);
       }
 
-      .layers__caption {
+      .layers__title {
         font-size: calc($index / 1.175);
         letter-spacing: calc($index / 3.5);
         margin-bottom: calc($index * (0.75));
