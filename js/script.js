@@ -40,7 +40,7 @@ const imgs = document.querySelectorAll(".slider .imgs img");
 const next = document.querySelector(".slider .buttons .next");
 const prev = document.querySelector(".slider .buttons .prev");
 
-let current_slide = 0;
+let current_slide = [...imgs].findIndex(img => img.classList.contains('current'));
 
 next.addEventListener("click", function () {
   imgs[current_slide].style.opacity = 0;
