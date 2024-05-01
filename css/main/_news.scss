@@ -6,34 +6,18 @@
   padding: 50px 5%;
 
   &__primary {
-    display: grid;
-    padding: 20px 2%;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    @include news(1);
   }
 
   &__secondary {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    padding: 20px 2%;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    @include news(2);
   }
 
   &__ternary {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    padding: 20px 2%;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    @include news(3);
   }
 
   &__additional {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    padding: 20px 2%;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    @include news(4);
   }
 }
-
-

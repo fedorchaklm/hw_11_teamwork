@@ -1,0 +1,7 @@
+@mixin news($times) {
+  display: grid;
+  grid-template-columns: repeat($times, 1fr);
+  column-gap: 20px;
+  padding: 20px 2%;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+}
