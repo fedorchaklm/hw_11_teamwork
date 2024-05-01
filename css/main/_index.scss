@@ -8,3 +8,7 @@
   background-color: $bg-color-primary;
   min-height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}

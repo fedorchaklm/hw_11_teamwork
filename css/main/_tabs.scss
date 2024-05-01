@@ -1,101 +1,101 @@
 .tabs-wrap {
-    padding: 150px 5%;
-    .tabs {
+  padding: 150px 10%;
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 800px;
+    width: 100%;
+    background-color: $bg-color-primary;
+    border-radius: 12px;
+    padding: 20px 2%;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+
+    .tabs__title {
+      color: $color-primary;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0 70% 20px 0;
+    }
+
+    .tabs__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .tabs__list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-width: 800px;
-        width: 100%;
-        background-color: $bg-color-primary;
-        border-radius: 12px;
-        padding: 20px 2%;
-        box-shadow: 0 5px 10px rgba(255, 255, 255, .5);
-    
-        .tabs__title {
-            color: $color-primary;
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin:0 70% 20px 0;
-        }
-    
-        .tabs__content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-    
-            .tabs__list {
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                width: 40%;
-    
-                label {
-                    height: 60px;
-                    font-size: 1.2rem;
-                    font-weight: 500;
-                    border-radius: 12px;
-                    line-height: 2.5;
-                    cursor: pointer;
-                    padding-left: 2.5%;
-                    color: $color-secondary;
-                    z-index: 1;
-                    transition: all 0.2s ease;
+        position: relative;
+        width: 40%;
 
-                    i {
-                        width: 26px;
-                        height: 22px;
-                    }
-    
-                    &:hover {
-                        color: $color-primary;
-                    }
-                }
-            }
-    
-            .indicator {
-                position: absolute;
-                height: 60px;
-                width: 100%;
-                top: 0;
-                left: 0;
-                background-color: $color-secondary;
-                border-radius: 12px;
-                transition: all .2s;
-            }
-    
-            .tabs__section {
-                width: 80%;
-                height: 100%;
-                line-height: 2;
-    
-                .text {
-                    text-indent: 20px;
-                    color: $color-primary;
-                    display: none;
-                }
-    
-                .purchase {
-                    display: block;
-                }
-    
-                .tabs__section-title {
-                    font-size: 25px;
-                    font-weight: 500;
-                    margin-bottom: 10px;
-                }
-    
-                p {
-                    text-align: justify;
-                }
-            }
+        label {
+          height: 60px;
+          font-size: 1.2rem;
+          font-weight: 500;
+          border-radius: 12px;
+          line-height: 2.5;
+          cursor: pointer;
+          padding-left: 2.5%;
+          color: $color-secondary;
+          z-index: 1;
+          transition: all 0.2s ease;
+
+          i {
+            width: 26px;
+            height: 22px;
+          }
+
+          &:hover {
+            color: $color-primary;
+          }
         }
-    
-        input {
-        display: none;
+      }
+
+      .indicator {
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $color-secondary;
+        border-radius: 12px;
+        transition: all 0.2s;
+      }
+
+      .tabs__section {
+        width: 80%;
+        height: 100%;
+        line-height: 2;
+
+        .text {
+          text-indent: 20px;
+          color: $color-primary;
+          display: none;
         }
+
+        .purchase {
+          display: block;
+        }
+
+        .tabs__section-title {
+          font-size: 25px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
     }
+
+    input {
+      display: none;
+    }
+  }
 }
 
 #purchase:checked ~ .tabs__list .purchase,
@@ -108,40 +108,40 @@
 #privatization:checked ~ .tabs__list .privatization,
 #arrest:checked ~ .tabs__list .arrest,
 #support:checked ~ .tabs__list .support {
-    color: $color-additional;
+  color: $color-additional;
 }
 
 #purchase:checked ~ .tabs__list .indicator {
-    top: 0;
+  top: 0;
 }
 
 #sale:checked ~ .tabs__list .indicator {
-    top: 60px;
+  top: 60px;
 }
 
 #lease:checked ~ .tabs__list .indicator {
-    top: 120px;
+  top: 120px;
 }
 #privatization:checked ~ .tabs__list .indicator {
-    top: 180px;
+  top: 180px;
 }
 #arrest:checked ~ .tabs__list .indicator {
-    top: 240px;
+  top: 240px;
 }
 #evaluation:checked ~ .tabs__list .indicator {
-    top: 300px;
+  top: 300px;
 }
 #consultation:checked ~ .tabs__list .indicator {
-    top: 360px;
+  top: 360px;
 }
 #preparation:checked ~ .tabs__list .indicator {
-    top: 420px;
+  top: 420px;
 }
 #passports:checked ~ .tabs__list .indicator {
-    top: 480px;
+  top: 480px;
 }
 #support:checked ~ .tabs__list .indicator {
-    top: 540px;
+  top: 540px;
 }
 
 #purchase:checked ~ .tabs__section .purchase,
@@ -154,7 +154,7 @@
 #privatization:checked ~ .tabs__section .privatization,
 #arrest:checked ~ .tabs__section .arrest,
 #support:checked ~ .tabs__section .support {
-    display: block;
+  display: block;
 }
 
 #sale:checked ~ .tabs__section .purchase,
@@ -166,5 +166,5 @@
 #privatization:checked ~ .tabs__section .purchase,
 #arrest:checked ~ .tabs__section .purchase,
 #support:checked ~ .tabs__section .purchase {
-    display: none;
+  display: none;
 }

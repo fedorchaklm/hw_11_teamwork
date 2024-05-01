@@ -1,121 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-</head>
-
-<body>
-  <header class="header">
-    <a href="index.html" class="logo">
-      <img class="logo__img" src="images/logo.svg" alt="logo">
-    </a>
-    <ul class="menu">
-      <li class="menu__item">
-        <a href="index.html" class="menu__link">Головна</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/services.html" class="menu__link">Послуги</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/news.html" class="menu__link">Новини та статті</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/search.html" class="menu__link">Пошук нерухомості</a>
-      </li>
-    </ul>
-  </header>
-  <div class="main">
-    <div class="layers-wrap">
-      <div class="layers">
-        <div class="layers__header">
-          <div class="layers__caption">The Alley</div>
-          <div class="layers__title">Realty</div>
-        </div>
-        <div class="layer layers__base" style="background-image: url('images/dnipro.png');"></div>
-        <div class="layer layers__middle" style="background-image: url('images/middle.png');"></div>
-        <div class="layer layers__front" style="background-image: url('images/front.png');"></div>
-      </div>
-    </div>
-    <div class="slider">
-      <h2 class="slider__heading"></h2>
-      <div class="imgs">
-        <img src="images/slider1.svg" alt="room">
-        <img src="images/slider2.svg" alt="room">
-        <img src="images/slider3.svg" alt="room" 2>
-        <img src="images/slider4.svg" alt="room">
-        <img src="images/slider5.svg" alt="room" class="current">
-      </div>
-      <div class="buttons">
-        <button class="prev"></button>
-        <button class="next"></button>
-      </div>
-    </div>
-    <div class="offers">
-      <a class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Продати квартиру</h2>
-        </div>
-        <img class="offers__img" src="images/offer_buy.png" alt="home">
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img class="logo__img" src="images/logo.svg" alt="logo" />
       </a>
-      <a class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Купити квартиру</h2>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Головна</a>
+        </li>
+        <li class="menu__item">
+          <a href="pages/services.html" class="menu__link">Послуги</a>
+        </li>
+        <li class="menu__item">
+          <a href="pages/news.html" class="menu__link">Новини та статті</a>
+        </li>
+        <li class="menu__item">
+          <a href="pages/search.html" class="menu__link">Пошук нерухомості</a>
+        </li>
+      </ul>
+    </header>
+    <div class="main">
+      <div class="layers-wrap">
+        <div class="layers">
+          <div class="layers__header">
+            <div class="layers__caption">The Alley</div>
+            <div class="layers__title">Realty</div>
+          </div>
+          <div
+            class="layer layers__base"
+            style="background-image: url('images/dnipro.png')"
+          ></div>
+          <div
+            class="layer layers__middle"
+            style="background-image: url('images/middle.png')"
+          ></div>
+          <div
+            class="layer layers__front"
+            style="background-image: url('images/front.png')"
+          ></div>
         </div>
-        <img class="offers__img" src="images/offer_flat.png" alt="home">
-      </a>
-      <a class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Орендувати квартиру</h2>
+      </div>
+      <div class="slider">
+        <h2 class="slider__heading"></h2>
+        <div class="imgs">
+          <img src="images/slider1.svg" alt="room" />
+          <img src="images/slider2.svg" alt="room" />
+          <img src="images/slider3.svg" alt="room" />
+          <img src="images/slider4.svg" alt="room" />
+          <img src="images/slider5.svg" alt="room" class="current" />
         </div>
-        <img class="offers__img" src="images/offer_rent.png" alt="home">
-      </a>
+        <div class="buttons">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+      </div>
+      <div class="offers">
+        <a class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Продати квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_buy.png" alt="home" />
+        </a>
+        <a class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Купити квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_flat.png" alt="home" />
+        </a>
+        <a class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Орендувати квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_rent.png" alt="home" />
+        </a>
+      </div>
     </div>
     <footer class="footer">
       <div class="contacts">
         <h3 class="contacts__heading">Контакти:</h3>
         <p class="contacts__adress">
           <i class="fa-solid fa-location-dot"></i>
-          51909, м. Кам'янське, пр. Свободи, 1
+          51909, м. Кам'янське, вул. Г.Романової, 5
         </p>
         <div class="contacts__tel">
           <i class="fa-solid fa-phone"></i>
-          <a href="tel:(098)-345-67-89" class="contacts__link">(098)-345-67-89</a>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(093)-117-86-89</a
+          >
         </div>
         <div class="contacts__tel">
           <i class="fa-solid fa-phone"></i>
-          <a href="tel:(098)-345-67-89" class="contacts__link">(098)-345-67-89</a>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(098)-345-67-89</a
+          >
         </div>
-        <button id="open" class="btn-cta"> Зворотній дзвінок </button>
+        <button id="open" class="btn-cta">Зворотній дзвінок</button>
       </div>
-      <iframe class="location"
+      <iframe
+        class="location"
         src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div class="socials">
         <h2 class="socials__heading">Завжди на зв'язку:</h2>
         <ul class="socials__list">
           <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a href="https://t.me/TheALLEYgroup" class="socials__link">
               <i class="fa-brands fa-telegram"></i>
               <span class="visually-hidden">telegram</span>
             </a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a
+              href="https://www.facebook.com/AlleyaKamenskoe/"
+              class="socials__link"
+            >
               <i class="fa-brands fa-facebook-f"></i>
               <span class="visually-hidden">facebook</span>
             </a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a
+              href="https://www.instagram.com/alleya__nedvizhimosti/"
+              class="socials__link"
+            >
               <i class="fa-brands fa-instagram"></i>
               <span class="visually-hidden">instagram</span>
             </a>
@@ -127,19 +154,36 @@
     <div class="modal hide">
       <div class="modal__dialog">
         <div class="modal__content">
-          <form action="#">
+          <form action="#" onsubmit="sendEmailTelegram(event)">
             <div id="close" class="modal__close">&times;</div>
-            <div class="modal__title">Залишіть ваш контактний номер телефону і наш менеджер передзвонить вам найближчим
-              часом</div>
-            <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input" autocomplete="off">
-            <input required placeholder="Ваш номер телефону" name="phone" type="tel" class="modal__input"
-              autocomplete="off">
-            <button class="btn">Перездвоніть мені</button>
+            <div class="modal__title">
+              Залишіть ваш контактний номер телефону і наш менеджер передзвонить
+              вам найближчим часом
+            </div>
+            <input
+              required
+              placeholder="Ваше ім'я"
+              name="name"
+              type="text"
+              class="modal__input"
+              autocomplete="off"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефону"
+              title="+380(96)123-45-67"
+              name="phone"
+              type="tel"
+              class="modal__input"
+              autocomplete="off"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            />
+            <button class="btn" type="submit">Перездвоніть мені</button>
+            <div class="form__send-result"></div>
           </form>
         </div>
       </div>
     </div>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
