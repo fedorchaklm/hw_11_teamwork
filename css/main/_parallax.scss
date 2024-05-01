@@ -18,7 +18,7 @@
       background-size: cover;
       background-position: center;
       will-change: transform;
-      // z-index: 2;
+      z-index: 2;
     }
 
     .layers__header {
@@ -39,8 +39,7 @@
       .layers__title {
         font-size: calc($index / 1.175);
         letter-spacing: calc($index / 3.5);
-        margin-bottom: calc($index * (0.75));
-        // margin-top: calc(var(--index) * (-0.75));
+        margin-bottom: calc($index * (0.5));
       }
     }
 
