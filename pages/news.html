@@ -19,7 +19,7 @@
   <body>
     <header class="header">
       <a href="../index.html" class="logo">
-        <img class="logo__img" src="../images/logo.svg" alt="logo" />
+        <img class="logo__img" src="images/logo.svg" alt="logo" />
       </a>
       <ul class="menu">
         <li class="menu__item">
@@ -335,5 +335,38 @@
       </div>
       <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
     </footer>
+    <div class="modal hide">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#" onsubmit="sendEmailTelegram(event)">
+            <div id="close" class="modal__close">&times;</div>
+            <div class="modal__title">
+              Залишіть ваш контактний номер телефону і наш менеджер передзвонить
+              вам найближчим часом
+            </div>
+            <input
+              required
+              placeholder="Ваше ім'я"
+              name="name"
+              type="text"
+              class="modal__input"
+              autocomplete="off"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефону"
+              title="+380961234567"
+              name="phone"
+              type="tel"
+              class="modal__input"
+              autocomplete="off"
+              pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$"
+            />
+            <button class="btn" type="submit">Перездвоніть мені</button>
+            <div class="form__send-result"></div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
