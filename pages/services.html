@@ -19,20 +19,26 @@
 </head>
 
 <body>
+    <!-- Header section -->
   <header class="header">
     <a href="../index.html" class="logo">
       <img class="logo__img" src="images/logo.svg" alt="logo" />
     </a>
+      <!-- Navigation menu -->
     <ul class="menu">
+        <!-- Menu item - Home -->
       <li class="menu__item">
         <a href="../index.html" class="menu__link">Головна</a>
       </li>
+        <!-- Menu item - Services -->
       <li class="menu__item">
         <a href="services.html" class="menu__link">Послуги</a>
       </li>
+        <!-- Menu item - News and Articles -->
       <li class="menu__item">
         <a href="news.html" class="menu__link">Новини та статті</a>
       </li>
+         <!-- Menu item - Property Search -->
       <li class="menu__item">
         <a href="search.html" class="menu__link">Пошук нерухомості</a>
       </li>
@@ -42,8 +48,12 @@
   <main class="main">
     <div class="tabs-wrap">
       <div class="tabs">
+          <!-- Tabs title -->
         <div class="tabs__title">Послуги</div>
+          <!-- Tabs content -->
+
         <div class="tabs__content">
+                        <!-- Radio inputs for tab indicators -->
           <input type="radio" name="indicator" checked id="purchase" />
           <input type="radio" name="indicator" id="sale" />
           <input type="radio" name="indicator" id="lease" />
@@ -54,51 +64,76 @@
           <input type="radio" name="indicator" id="privatization" />
           <input type="radio" name="indicator" id="arrest" />
           <input type="radio" name="indicator" id="support" />
+            <!-- List of tabs -->
           <div class="tabs__list">
+              <!-- Tab labels -->
             <label for="purchase" class="purchase">
               <i class="fas fa-home"></i>
+                 <!-- Label text for purchase tab -->
               <span class="tabs__list-topic">Купівля</span>
             </label>
+              <!-- Tab labels -->
             <label for="sale" class="sale">
               <i class="fa-solid fa-pen"></i>
+                 <!-- Label text for sale tab -->
               <span class="tabs__list-topic">Продаж</span>
             </label>
+              <!-- Tab labels -->
             <label for="lease" class="lease">
               <i class="fa-solid fa-building"></i>
+                 <!-- Label text for lease tab -->
               <span class="tabs__list-topic">Оренда</span>
             </label>
+              <!-- Tab labels -->
             <label for="privatization" class="privatization">
               <i class="fa-solid fa-file-lines"></i>
+                 <!-- Label text for privatization tab -->
               <span class="tabs__list-topic">Приватизація</span>
             </label>
+              <!-- Tab labels -->
             <label for="arrest" class="arrest">
               <i class="fa-solid fa-building-lock"></i>
+                 <!-- Label text for arrest tab -->
               <span class="tabs__list-topic">Зняття арешту</span>
             </label>
+              <!-- Tab labels -->
             <label for="evaluation" class="evaluation">
               <i class="fa-solid fa-file-invoice-dollar"></i>
+                 <!-- Label text for evaluation tab -->
               <span class="tabs__list-topic">Експертна оцінка</span>
             </label>
+              <!-- Tab labels -->
             <label for="consultation" class="consultation">
               <i class="fa-solid fa-building-columns"></i>
+                 <!-- Label text for consultation tab -->
               <span class="tabs__list-topic">Юридична консультація</span>
             </label>
+              <!-- Tab labels -->
             <label for="preparation" class="preparation">
               <i class="fa-solid fa-file-pen"></i>
+                 <!-- Label text for preparation tab -->
               <span class="tabs__list-topic">Оформлення документів</span>
             </label>
+              <!-- Tab labels -->
             <label for="passports" class="passports">
               <i class="fa-solid fa-compass-drafting"></i>
+                 <!-- Label text for passports tab -->
               <span class="tabs__list-topic">Виготовлення техпаспортів</span>
             </label>
+              <!-- Tab labels -->
             <label for="support" class="support">
               <i class="fa-solid fa-building-user"></i>
+                 <!-- Label text for support tab -->
               <span class="tabs__list-topic">Повне супроводження угоди</span>
             </label>
+              <!-- Indicator for active tab -->
             <div class="indicator"></div>
           </div>
+            <!-- Content sections for each tab -->
           <div class="tabs__section">
+              <!-- Content for the 'purchase' tab -->
             <div class="purchase text">
+                <!-- Text content for the 'purchase' tab -->
               <!-- <div class="tabs__section-title">Home Content</div> -->
               <p>
                 Купівля нерухомості - це важливий етап життя у кожної людини,
@@ -137,6 +172,7 @@
               </p>
             </div>
             <div class="sale text">
+                <!-- Text content for the 'sale' tab -->
               <!-- <div class="tabs__section-title">Blog Content</div> -->
               <p>
                 Продаж нерухомості - це важлива подія, яка вимагає
@@ -170,6 +206,7 @@
               </p>
             </div>
             <div class="lease text">
+                <!-- Text content for the 'lease' tab -->
               <!-- <div class="tabs__section-title">Help Content</div> -->
               <p>
                 Оренда нерухомості - це зручний та ефективний спосіб
@@ -203,6 +240,7 @@
               </p>
             </div>
             <div class="preparation text">
+                <!-- Text content for the 'preparation' tab -->
               <!-- <div class="tabs__section-title">Code Content</div> -->
               <p>
                 Оформлення документів у сфері нерухомості - це важлива
@@ -237,6 +275,7 @@
               </p>
             </div>
             <div class="consultation text">
+                <!-- Text content for the 'consultation' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Юридична консультація у справах нерухомості - це надзвичайно
@@ -272,6 +311,7 @@
               </p>
             </div>
             <div class="evaluation text">
+                <!-- Text content for the 'evaluation' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Експертна оцінка нерухомості - це ключовий етап у будь-якому
@@ -306,6 +346,7 @@
               </p>
             </div>
             <div class="passports text">
+                <!-- Text content for the 'passports' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Виготовлення технічних паспортів для нерухомості є ключовим
@@ -339,6 +380,7 @@
               </p>
             </div>
             <div class="privatization text">
+                <!-- Text content for the 'privatization' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Приватизація нерухомості - це процес, який вимагає важливого
@@ -372,6 +414,7 @@
               </p>
             </div>
             <div class="arrest text">
+                <!-- Text content for the 'arrest' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Зняття арешту з нерухомості - важлива послуга, яка потребує
@@ -403,6 +446,7 @@
               </p>
             </div>
             <div class="support text">
+                <!-- Text content for the 'support' tab -->
               <!-- <div class="tabs__section-title">About Content</div> -->
               <p>
                 Повне супроводження угоди з нерухомістю - це послуга, яка
@@ -460,13 +504,17 @@
   </main>
   <!-- Footer section -->
   <footer class="footer">
+      <!-- Contact information section -->
     <!-- Contact information -->
     <div class="contacts">
+        <!-- Heading for contact information -->
       <h3 class="contacts__heading">Контакти:</h3>
+        <!-- Address -->
       <p class="contacts__adress">
         <i class="fa-solid fa-location-dot"></i>
         51909, м. Кам'янське, вул. Г.Романової, 5
       </p>
+        <!-- Phone numbers -->
       <!-- Phone numbers -->
       <div class="contacts__tel">
         <i class="fa-solid fa-phone"></i>
@@ -476,28 +524,36 @@
         <i class="fa-solid fa-phone"></i>
         <a href="tel:(098)-345-67-89" class="contacts__link">(098)-345-67-89</a>
       </div>
+        <!-- Call back button -->
       <button id="open" class="btn-cta">Зворотній дзвінок</button>
     </div>
+      <!-- Google Maps iframe -->
     <!-- Google Maps location -->
     <iframe class="location"
       src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
       allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Social media section -->
     <!-- Social media links -->
     <div class="socials">
+        <!-- Heading for social media -->
       <h2 class="socials__heading">Завжди на зв'язку:</h2>
+        <!-- List of social media links -->
       <ul class="socials__list">
+          <!-- Telegram link -->
         <li class="socials__item">
           <a href="https://t.me/TheALLEYgroup" class="socials__link">
             <i class="fa-brands fa-telegram"></i>
             <span class="visually-hidden">telegram</span>
           </a>
         </li>
+          <!-- Facebook link -->
         <li class="socials__item">
           <a href="https://www.facebook.com/AlleyaKamenskoe/" class="socials__link">
             <i class="fa-brands fa-facebook-f"></i>
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
+          <!-- Instagram link -->
         <li class="socials__item">
           <a href="https://www.instagram.com/alleya__nedvizhimosti/" class="socials__link">
             <i class="fa-brands fa-instagram"></i>
