@@ -1,7 +1,7 @@
 .layers-wrap {
   position: relative;
-  // margin-top: 100px;
 
+  // styles for layers
   .layers {
     position: relative;
     height: 100vh;
@@ -11,6 +11,7 @@
     text-align: center;
     overflow: hidden;
 
+  // styles for layer
     .layer {
       width: 100%;
       height: 100%;
@@ -21,6 +22,7 @@
       z-index: 2;
     }
 
+  // styles for header
     .layers__header {
       z-index: 1;
       transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
@@ -31,11 +33,13 @@
       font-weight: 700;
       text-shadow: 0 0 15px $color-secondary;
 
+  // styles for caption
       .layers__caption {
         font-size: calc($index * 2.5);
         letter-spacing: calc($index / 2.25);
       }
 
+  // styles for title
       .layers__title {
         font-size: calc($index / 1.175);
         letter-spacing: calc($index / 3.5);
@@ -43,6 +47,7 @@
       }
     }
 
+    // Background layers with different parallax effects 
     .layers__base {
       transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
       z-index: 0;

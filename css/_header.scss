@@ -1,3 +1,4 @@
+  /* Fixed positioning for the header */
 .header {
   position: fixed;
   top: 0;
@@ -18,6 +19,7 @@
     height: 100px;
   }
 
+  // styles for navigation menu
   .menu {
     color: $color-secondary;
     display: grid;
