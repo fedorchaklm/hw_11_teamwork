@@ -1,195 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>The ALLEY / Пошук нерухомості</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
-      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="../index.html" class="logo">
-        <img class="logo__img" src="images/logo.svg" alt="logo" />
-      </a>
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="../index.html" class="menu__link">Головна</a>
-        </li>
-        <li class="menu__item">
-          <a href="services.html" class="menu__link">Послуги</a>
-        </li>
-        <li class="menu__item">
-          <a href="news.html" class="menu__link">Новини та статті</a>
-        </li>
-        <li class="menu__item">
-          <a href="search.html" class="menu__link">Пошук нерухомості</a>
-        </li>
-      </ul>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>The ALLEY / Пошук нерухомості</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="../index.html" class="logo">
+      <img class="logo__img" src="images/logo.svg" alt="logo" />
+    </a>
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="../index.html" class="menu__link">Головна</a>
+      </li>
+      <li class="menu__item">
+        <a href="services.html" class="menu__link">Послуги</a>
+      </li>
+      <li class="menu__item">
+        <a href="news.html" class="menu__link">Новини та статті</a>
+      </li>
+      <li class="menu__item">
+        <a href="search.html" class="menu__link">Пошук нерухомості</a>
+      </li>
+    </ul>
+  </header>
   <!-- Main content section -->
-    <main class="main">
-      <div class="tabs-wrap tabs-wrap--small">
-        <div class="tabs">
-          <div class="tabs__content">
-            <input type="radio" name="indicator" checked id="purchase" />
-            <input type="radio" name="indicator" id="sale" />
-            <input type="radio" name="indicator" id="lease" />
-            <div class="tabs__list tabs__list--small">
-              <label for="purchase" class="purchase">
-                <i class="fas fa-home"></i>
-                <span class="tabs__list-topic">Купівля</span>
-              </label>
-              <label for="sale" class="sale">
-                <i class="fa-solid fa-pen"></i>
-                <span class="tabs__list-topic">Продаж</span>
-              </label>
-              <label for="lease" class="lease">
-                <i class="fa-solid fa-building"></i>
-                <span class="tabs__list-topic">Оренда</span>
-              </label>
-              <div class="indicator"></div>
+  <main class="main">
+    <div class="tabs-wrap tabs-wrap--small">
+      <div class="tabs">
+        <div class="tabs__content">
+          <input type="radio" name="indicator" checked id="purchase" />
+          <input type="radio" name="indicator" id="sale" />
+          <input type="radio" name="indicator" id="lease" />
+          <div class="tabs__list tabs__list--small">
+            <label for="purchase" class="purchase">
+              <i class="fas fa-home"></i>
+              <span class="tabs__list-topic">Купівля</span>
+            </label>
+            <label for="sale" class="sale">
+              <i class="fa-solid fa-pen"></i>
+              <span class="tabs__list-topic">Продаж</span>
+            </label>
+            <label for="lease" class="lease">
+              <i class="fa-solid fa-building"></i>
+              <span class="tabs__list-topic">Оренда</span>
+            </label>
+            <div class="indicator"></div>
+          </div>
+          <div class="tabs__section">
+            <div class="purchase text">
+              <iframe
+                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                frameborder="0" width="1100px" height="700px"></iframe>
             </div>
-            <div class="tabs__section">
-              <div class="purchase text">
-                <iframe
-                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                  frameborder="0"
-                  width="1100px"
-                  height="700px"
-                ></iframe>
-              </div>
-              <div class="sale text">
-                <iframe
-                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                  frameborder="0"
-                  width="1050px"
-                  height="700px"
-                ></iframe>
-              </div>
-              <div class="lease text">
-                <iframe
-                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                  frameborder="0"
-                  width="1050px"
-                  height="700px"
-                ></iframe>
-              </div>
+            <div class="sale text">
+              <iframe
+                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                frameborder="0" width="1050px" height="700px"></iframe>
+            </div>
+            <div class="lease text">
+              <iframe
+                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                frameborder="0" width="1050px" height="700px"></iframe>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- letbox -->
-      <div class="card__conteiner">
-        <div class="card">
-          <div class="image-bx">
-            <a
-              id="img_small"
-              href="../images/1.png"
-              data-lightbox="roadtrip"
-              data-title="My caption"
-            >
-              <img src="../images/1.png" alt="img" />
-            </a>
-            <a
-              id="img_small"
-              href="../images/2.png"
-              data-lightbox="roadtrip"
-              data-title="My caption"
-            >
-              <img src="../images/2.png" alt="img" />
-            </a>
-            <a
-              id="img_small"
-              href="../images/3.png"
-              data-lightbox="roadtrip"
-              data-title="My caption"
-            >
-              <img src="../images/3.png" alt="img" />
-            </a>
-          </div>
-          <div class="card__content">
-            <span class="price">
-              <a href="#">100000</a>
-            </span>
-            <span>
-              <ul>
-                <li>Address</li>
-                <li>Area</li>
-                <li>Type</li>
-              </ul>
-            </span>
-          </div>
+    <!-- letbox -->
+    <div class="card__conteiner">
+      <div class="card">
+        <div class="image-bx">
+          <a id="img_small" href="../images/1.png" data-lightbox="roadtrip" data-title="My caption">
+            <img src="../images/1.png" alt="img" />
+          </a>
+          <a id="img_small" href="../images/2.png" data-lightbox="roadtrip" data-title="My caption">
+            <img src="../images/2.png" alt="img" />
+          </a>
+          <a id="img_small" href="../images/3.png" data-lightbox="roadtrip" data-title="My caption">
+            <img src="../images/3.png" alt="img" />
+          </a>
         </div>
-        <!--  -->
-        <div class="card">
-          <div class="image-bx"></div>
-          <div class="card__content">
-            <span class="price">
-              <a href="#">100000</a>
-            </span>
-            <span>
-              <ul>
-                <li>Address</li>
-                <li>Area</li>
-                <li>Type</li>
-              </ul>
-            </span>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="card">
-          <div class="image-bx"></div>
-          <div class="card__content">
-            <span class="price">
-              <a href="#">100000</a>
-            </span>
-            <span>
-              <ul>
-                <li>Address</li>
-                <li>Area</li>
-                <li>Type</li>
-              </ul>
-            </span>
-          </div>
-        </div>
-        <!--  -->
-        <div class="card">
-          <div class="image-bx"></div>
-          <div class="card__content">
-            <span class="price">
-              <a href="#">100000</a>
-            </span>
-            <span>
-              <ul>
-                <li>Address</li>
-                <li>Area</li>
-                <li>Type</li>
-              </ul>
-            </span>
-          </div>
+        <div class="card__content">
+          <span class="price">
+            <a href="#">100000</a>
+          </span>
+          <span>
+            <ul>
+              <li>Address</li>
+              <li>Area</li>
+              <li>Type</li>
+            </ul>
+          </span>
         </div>
       </div>
-    </main>
+      <!--  -->
+      <div class="card">
+        <div class="image-bx"></div>
+        <div class="card__content">
+          <span class="price">
+            <a href="#">100000</a>
+          </span>
+          <span>
+            <ul>
+              <li>Address</li>
+              <li>Area</li>
+              <li>Type</li>
+            </ul>
+          </span>
+        </div>
+      </div>
 
-    <!-- Footer section -->
+      <!--  -->
+      <div class="card">
+        <div class="image-bx"></div>
+        <div class="card__content">
+          <span class="price">
+            <a href="#">100000</a>
+          </span>
+          <span>
+            <ul>
+              <li>Address</li>
+              <li>Area</li>
+              <li>Type</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card">
+        <div class="image-bx"></div>
+        <div class="card__content">
+          <span class="price">
+            <a href="#">100000</a>
+          </span>
+          <span>
+            <ul>
+              <li>Address</li>
+              <li>Area</li>
+              <li>Type</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer section -->
   <footer class="footer">
     <!-- Contact information -->
     <div class="contacts">
@@ -240,51 +210,32 @@
     <!-- Copyright information -->
     <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
   </footer>
-    <div class="modal hide">
-      <div class="modal__dialog">
-        <div class="modal__content">
-          <form action="#" onsubmit="sendEmailTelegram(event)">
-            <div id="close" class="modal__close">&times;</div>
-            <div class="modal__title">
-              Залишіть ваш контактний номер телефону і наш менеджер передзвонить
-              вам найближчим часом
-            </div>
-            <input
-              required
-              placeholder="Ваше ім'я"
-              name="name"
-              type="text"
-              class="modal__input"
-              autocomplete="off"
-            />
-            <input
-              required
-              placeholder="Ваш номер телефону"
-              title="+380961234567"
-              name="phone"
-              type="tel"
-              class="modal__input"
-              autocomplete="off"
-              pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$"
-            />
-            <button class="btn" type="submit">Перездвоніть мені</button>
-            <div class="form__send-result"></div>
-          </form>
-        </div>
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form action="#" onsubmit="sendEmailTelegram(event)">
+          <div id="close" class="modal__close">&times;</div>
+          <div class="modal__title">
+            Залишіть ваш контактний номер телефону і наш менеджер передзвонить
+            вам найближчим часом
+          </div>
+          <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input" autocomplete="off" />
+          <input required placeholder="Ваш номер телефону" title="+380961234567" name="phone" type="tel"
+            class="modal__input" autocomplete="off" pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$" />
+          <button class="btn" type="submit">Перездвоніть мені</button>
+          <div class="form__send-result"></div>
+        </form>
       </div>
     </div>
-    <!-- Light box -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
-      integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
-      integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </body>
+  </div>
+  <!-- Light box -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
+    integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+    integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
