@@ -4,10 +4,6 @@
   min-height is set to ensure that the container occupies at least 60% of the viewport height.
 */
 .card__conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
   /*
   The .card class styles each individual property card.
   It sets the position, width, height, padding, and flexbox properties.
@@ -139,4 +135,8 @@
       box-shadow: -10px 10px 0 $color-additional;
     }
   }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
 }
