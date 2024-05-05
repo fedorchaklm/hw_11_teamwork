@@ -1,181 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Page title and favicon -->
+    <title>The ALLEY</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Page title and favicon -->
-  <title>The ALLEY</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-</head>
-
-<body>
-  <!-- Header section -->
-  <header class="header">
-    <!-- Logo with a link to the homepage -->
-    <a href="index.html" class="logo">
-      <img class="logo__img" src="images/logo.svg" alt="logo" />
-    </a>
-    <!-- Navigation menu -->
-    <ul class="menu">
-      <li class="menu__item">
-        <a href="index.html" class="menu__link">Головна</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/services.html" class="menu__link">Послуги</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/news.html" class="menu__link">Новини та статті</a>
-      </li>
-      <li class="menu__item">
-        <a href="pages/search.html" class="menu__link">Пошук нерухомості</a>
-      </li>
-    </ul>
-  </header>
-  <!-- Main content section -->
-  <div class="main">
-    <!-- Layers section with images -->
-    <div class="layers-wrap">
-      <div class="layers">
-        <div class="layers__header">
-          <div class="layers__caption">The Alley</div>
-          <div class="layers__title">Realty</div>
-        </div>
-        <div class="layer layers__base" style="background-image: url('images/dnipro.png')"></div>
-        <div class="layer layers__middle" style="background-image: url('images/middle.png')"></div>
-        <div class="layer layers__front" style="background-image: url('images/front.png')"></div>
-      </div>
-    </div>
-    <!-- Content section -->
-    <div class="conteiner-k">
-      <div class="content">
-        <img src="images/dir_photo.png" alt="" />
-        <div>
-          <p>
-            У сучасному світі питання безпеки угоди купівлі-продажу
-            нерухомості набуває особливого значення. Ми, команда агентства
-            "Алея", готові забезпечити вам повний спектр послуг з нерухомості,
-            щоб зробити процес придбання максимально комфортним та безпечним.
-          </p>
-          <p>
-            За 15 років на ринку ми стали визнаними лідерами у Кам'янському та
-            стали членом впливової Асоціації Фахівців Нерухомості України
-            (АФНУ) з 2008 року. Наші досвідчені фахівці допомогли безлічі
-            сімей здійснити мрію про власний будинок та вирішити житлові
-            проблеми будь-якої складності.
-          </p>
-          <p>
-            Я хочу, щоб ви знали, що ми розуміємо цінність вашого часу та
-            грошей. Тому ми пропонуємо вам не лише найкращі умови співпраці,
-            але й особистий підхід до кожного клієнта. Ви можете бути
-            впевнені, що кожна угода з нами - це гарантія безпеки та успіху.
-          </p>
-          <p>
-            Обираючи нас, ви отримуєте не просто нерухомість, але й нашу повну
-            підтримку на кожному етапі угоди. Ми готові стати вашими надійними
-            партнерами та супроводжувати вас в усіх аспектах нерухомісного
-            бізнесу.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Offers section with links to search form -->
-    <div class="offers">
-      <a href="pages/search.html" class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Продати квартиру</h2>
-        </div>
-        <img class="offers__img" src="images/offer_buy.png" alt="home" />
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <!-- Logo with a link to the homepage -->
+      <a href="index.html" class="logo">
+        <img class="logo__img" src="images/logo.svg" alt="logo" />
       </a>
-      <a href="pages/search.html" class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Купити квартиру</h2>
-        </div>
-        <img class="offers__img" src="images/offer_flat.png" alt="home" />
-      </a>
-      <a href="pages/search.html" class="offers__item">
-        <div class="container-sm">
-          <h2 class="offers__heading">Орендувати квартиру</h2>
-        </div>
-        <img class="offers__img" src="images/offer_rent.png" alt="home" />
-      </a>
-    </div>
-  </div>
-  <!-- Footer section -->
-  <footer class="footer">
-    <!-- Contact information -->
-    <div class="contacts">
-      <h3 class="contacts__heading">Контакти:</h3>
-      <p class="contacts__adress">
-        <i class="fa-solid fa-location-dot"></i>
-        51909, м. Кам'янське, вул. Г.Романової, 5
-      </p>
-      <!-- Phone numbers -->
-      <div class="contacts__tel">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:(098)-345-67-89" class="contacts__link">(093)-117-86-89</a>
-      </div>
-      <div class="contacts__tel">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:(098)-345-67-89" class="contacts__link">(098)-345-67-89</a>
-      </div>
-      <button id="open" class="btn-cta">Зворотній дзвінок</button>
-    </div>
-    <!-- Google Maps location -->
-    <iframe class="location"
-      src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- Social media links -->
-    <div class="socials">
-      <h2 class="socials__heading">Завжди на зв'язку:</h2>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="https://t.me/TheALLEYgroup" class="socials__link">
-            <i class="fa-brands fa-telegram"></i>
-            <span class="visually-hidden">telegram</span>
-          </a>
+      <!-- Navigation menu -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Головна</a>
         </li>
-        <li class="socials__item">
-          <a href="https://www.facebook.com/AlleyaKamenskoe/" class="socials__link">
-            <i class="fa-brands fa-facebook-f"></i>
-            <span class="visually-hidden">facebook</span>
-          </a>
+        <li class="menu__item">
+          <a href="pages/services.html" class="menu__link">Послуги</a>
         </li>
-        <li class="socials__item">
-          <a href="https://www.instagram.com/alleya__nedvizhimosti/" class="socials__link">
-            <i class="fa-brands fa-instagram"></i>
-            <span class="visually-hidden">instagram</span>
-          </a>
+        <li class="menu__item">
+          <a href="pages/news.html" class="menu__link">Новини та статті</a>
+        </li>
+        <li class="menu__item">
+          <a href="pages/search.html" class="menu__link">Пошук нерухомості</a>
         </li>
       </ul>
-    </div>
-    <!-- Copyright information -->
-    <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
-  </footer>
-  <div class="modal hide">
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <form action="#" onsubmit="sendEmailTelegram(event)">
-          <div id="close" class="modal__close">&times;</div>
-          <div class="modal__title">
-            Залишіть ваш контактний номер телефону і наш менеджер передзвонить
-            вам найближчим часом
+    </header>
+    <!-- Main content section -->
+    <div class="main">
+      <!-- Layers section with images -->
+      <div class="layers-wrap">
+        <div class="layers">
+          <div class="layers__header">
+            <div class="layers__caption">The Alley</div>
+            <div class="layers__title">Realty</div>
           </div>
-          <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input" autocomplete="off" />
-          <input required placeholder="Ваш номер телефону" title="+380961234567" name="phone" type="tel"
-            class="modal__input" autocomplete="off" pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$" />
-          <button class="btn" type="submit">Перездвоніть мені</button>
-          <div class="form__send-result"></div>
-        </form>
+          <div
+            class="layer layers__base"
+            style="background-image: url('images/dnipro.png')"
+          ></div>
+          <div
+            class="layer layers__middle"
+            style="background-image: url('images/middle.png')"
+          ></div>
+          <div
+            class="layer layers__front"
+            style="background-image: url('images/front.png')"
+          ></div>
+        </div>
+      </div>
+      <!-- Content section -->
+      <div class="conteiner-k">
+        <div class="content">
+          <img src="images/dir_photo.png" alt="" />
+          <div>
+            <p>
+              У сучасному світі питання безпеки угоди купівлі-продажу
+              нерухомості набуває особливого значення. Ми, команда агентства
+              "Алея", готові забезпечити вам повний спектр послуг з нерухомості,
+              щоб зробити процес придбання максимально комфортним та безпечним.
+            </p>
+            <p>
+              За 15 років на ринку ми стали визнаними лідерами у Кам'янському та
+              стали членом впливової Асоціації Фахівців Нерухомості України
+              (АФНУ) з 2008 року. Наші досвідчені фахівці допомогли безлічі
+              сімей здійснити мрію про власний будинок та вирішити житлові
+              проблеми будь-якої складності.
+            </p>
+            <p>
+              Я хочу, щоб ви знали, що ми розуміємо цінність вашого часу та
+              грошей. Тому ми пропонуємо вам не лише найкращі умови співпраці,
+              але й особистий підхід до кожного клієнта. Ви можете бути
+              впевнені, що кожна угода з нами - це гарантія безпеки та успіху.
+            </p>
+            <p>
+              Обираючи нас, ви отримуєте не просто нерухомість, але й нашу повну
+              підтримку на кожному етапі угоди. Ми готові стати вашими надійними
+              партнерами та супроводжувати вас в усіх аспектах нерухомісного
+              бізнесу.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Offers section with links to search form -->
+      <div class="offers">
+        <a href="pages/search.html" class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Продати квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_buy.png" alt="home" />
+        </a>
+        <a href="pages/search.htm" class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Купити квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_flat.png" alt="home" />
+        </a>
+        <a href="pages/search.html" class="offers__item">
+          <div class="container-sm">
+            <h2 class="offers__heading">Орендувати квартиру</h2>
+          </div>
+          <img class="offers__img" src="images/offer_rent.png" alt="home" />
+        </a>
       </div>
     </div>
-  </div>
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- Footer section -->
+    <footer class="footer">
+      <!-- Contact information -->
+      <div class="contacts">
+        <h3 class="contacts__heading">Контакти:</h3>
+        <p class="contacts__adress">
+          <i class="fa-solid fa-location-dot"></i>
+          51909, м. Кам'янське, вул. Г.Романової, 5
+        </p>
+        <!-- Phone numbers -->
+        <div class="contacts__tel">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(093)-117-86-89</a
+          >
+        </div>
+        <div class="contacts__tel">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(098)-345-67-89</a
+          >
+        </div>
+        <button id="open" class="btn-cta">Зворотній дзвінок</button>
+      </div>
+      <!-- Google Maps location -->
+      <iframe
+        class="location"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- Social media links -->
+      <div class="socials">
+        <h2 class="socials__heading">Завжди на зв'язку:</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="https://t.me/TheALLEYgroup" class="socials__link">
+              <i class="fa-brands fa-telegram"></i>
+              <span class="visually-hidden">telegram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              href="https://www.facebook.com/AlleyaKamenskoe/"
+              class="socials__link"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              href="https://www.instagram.com/alleya__nedvizhimosti/"
+              class="socials__link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright information -->
+      <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
+    </footer>
+    <div class="modal hide">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#" onsubmit="sendEmailTelegram(event)">
+            <div id="close" class="modal__close">&times;</div>
+            <div class="modal__title">
+              Залишіть ваш контактний номер телефону і наш менеджер передзвонить
+              вам найближчим часом
+            </div>
+            <input
+              required
+              placeholder="Ваше ім'я"
+              name="name"
+              type="text"
+              class="modal__input"
+              autocomplete="off"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефону"
+              title="+380961234567"
+              name="phone"
+              type="tel"
+              class="modal__input"
+              autocomplete="off"
+              pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$"
+            />
+            <button class="btn" type="submit">Перездвоніть мені</button>
+            <div class="form__send-result"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>

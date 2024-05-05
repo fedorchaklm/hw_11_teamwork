@@ -1,78 +1,85 @@
-// styles for modal
+/*
+  Styles for modal component.
+*/
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed; /* Fixes the modal position */
+  top: 0; /* Aligns the modal to the top of the viewport */
+  left: 0; /* Aligns the modal to the left of the viewport */
+  z-index: 1050; /* Sets the stacking order */
+  display: none; /* Hides the modal by default */
+  width: 100%; /* Sets the width to cover the entire viewport */
+  height: 100%; /* Sets the height to cover the entire viewport */
+  overflow: hidden; /* Hides the overflow content */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a semi-transparent black background */
 
   &.show {
-    display: block;
+    display: block; /* Shows the modal when the 'show' class is applied */
   }
 
   &.hide {
-    display: none;
+    display: none; /* Hides the modal when the 'hide' class is applied */
   }
-
-    &__dialog {
-    max-width: 500px;
-    margin: 120px auto;
-
+  /* Styles for modal dialog */
+  &__dialog {
+    max-width: 500px; /* Sets the maximum width of the modal dialog */
+    margin: 120px auto; /* Centers the modal vertically with some top margin */
+    /* Styles for modal content */
     .modal__content {
-      position: relative;
-      width: 100%;
-      padding: 40px;
-      color: $color-primary;
-      background-color: $bg-color-primary;
-      box-shadow: 0 4px 15px $color-primary;
-      border-radius: 4px;
-      max-height: 80vh;
-      overflow-y: auto;
+      position: relative; /* Sets the content position */
+      width: 100%; /* Sets the content width */
+      padding: 40px; /* Adds padding around the content */
+      color: $color-primary; /* Sets the text color */
+      background-color: $bg-color-primary; /* Sets the background color */
+      box-shadow: 0 4px 15px $color-primary; /* Adds a box shadow effect */
+      border-radius: 4px; /* Adds rounded corners */
+      max-height: 80vh; /* Sets the maximum height of the content */
+      overflow-y: auto; /* Enables vertical scrolling if content overflows */
     }
-
+    /* Styles for modal close button */
     .modal__close {
-      position: absolute;
-      top: 8px;
-      right: 14px;
-      font-size: 30px;
-      opacity: 0.5;
-      font-weight: 700;
-      background-color: transparent;
-      cursor: pointer;
+      position: absolute; /* Sets the close button position */
+      top: 8px; /* Positions the close button from the top */
+      right: 14px; /* Positions the close button from the right */
+      font-size: 30px; /* Sets the font size of the close button */
+      opacity: 0.5; /* Sets the opacity of the close button */
+      font-weight: 700; /* Sets the font weight of the close button */
+      background-color: transparent; /* Sets the background color of the close button */
+      cursor: pointer; /* Changes the cursor to a pointer on hover */
     }
-
+    /* Styles for modal title */
     .modal__title {
-      text-align: center;
-      font-size: 1.3rem;
+      text-align: center; /* Centers the modal title */
+      font-size: 1.3rem; /* Sets the font size of the modal title */
     }
-
+    /* Styles for modal input */
     .modal__input {
-      display: block;
-      margin: 20px auto 20px auto;
-      width: 280px;
-      height: 50px;
-      color: $bg-color-primary;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      font-size: 1rem;
-      text-align: center;
-      padding: 0 20px;
-      outline: 0;
+      display: block; /* Displays the input as a block element */
+      margin: 20px auto 20px auto; /* Adds margin around the input */
+      width: 280px; /* Sets the width of the input */
+      height: 50px; /* Sets the height of the input */
+      color: $bg-color-primary; /* Sets the text color of the input */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a box shadow effect */
+      font-size: 1rem; /* Sets the font size of the input */
+      text-align: center; /* Centers the text in the input */
+      padding: 0 20px; /* Adds padding to the input */
+      outline: 0; /* Removes the default outline */
     }
-
+    /* Styles for modal button */
     .btn {
-      display: block;
-      width: 280px;
-      margin: 0 auto;
-      height: 50px;
-      color: $bg-color-primary;
-      font-weight: 700;
-      background-color: $color-secondary;
-      font-size: 1rem;
-      cursor: pointer;
+      display: block; /* Displays the button as a block element */
+      width: 280px; /* Sets the width of the button */
+      margin: 0 auto; /* Centers the button horizontally */
+      height: 50px; /* Sets the height of the button */
+      color: $bg-color-primary; /* Sets the text color of the button */
+      font-weight: 700; /* Sets the font weight of the button */
+      background-color: $color-secondary; /* Sets the background color of the button */
+      font-size: 1rem; /* Sets the font size of the button */
+      cursor: pointer; /* Changes the cursor to a pointer on hover */
     }
   }
 }

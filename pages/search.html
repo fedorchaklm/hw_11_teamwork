@@ -1,241 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>The ALLEY / Пошук нерухомості</title>
-  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
-    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <header class="header">
-    <a href="../index.html" class="logo">
-      <img class="logo__img" src="../images/logo.svg" alt="logo" />
-    </a>
-    <ul class="menu">
-      <li class="menu__item">
-        <a href="../index.html" class="menu__link">Головна</a>
-      </li>
-      <li class="menu__item">
-        <a href="services.html" class="menu__link">Послуги</a>
-      </li>
-      <li class="menu__item">
-        <a href="news.html" class="menu__link">Новини та статті</a>
-      </li>
-      <li class="menu__item">
-        <a href="search.html" class="menu__link">Пошук нерухомості</a>
-      </li>
-    </ul>
-  </header>
-  <!-- Main content section -->
-  <main class="main">
-    <div class="tabs-wrap tabs-wrap--small">
-      <div class="tabs">
-        <div class="tabs__content">
-          <input type="radio" name="indicator" checked id="purchase" />
-          <input type="radio" name="indicator" id="sale" />
-          <input type="radio" name="indicator" id="lease" />
-          <div class="tabs__list tabs__list--small">
-            <label for="purchase" class="purchase">
-              <i class="fas fa-home"></i>
-              <span class="tabs__list-topic">Купівля</span>
-            </label>
-            <label for="sale" class="sale">
-              <i class="fa-solid fa-pen"></i>
-              <span class="tabs__list-topic">Продаж</span>
-            </label>
-            <label for="lease" class="lease">
-              <i class="fa-solid fa-building"></i>
-              <span class="tabs__list-topic">Оренда</span>
-            </label>
-            <div class="indicator"></div>
-          </div>
-          <div class="tabs__section">
-            <div class="purchase text">
-              <iframe
-                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                frameborder="0" width="1100px" height="700px"></iframe>
-            </div>
-            <div class="sale text">
-              <iframe
-                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                frameborder="0" width="1050px" height="700px"></iframe>
-            </div>
-            <div class="lease text">
-              <iframe
-                src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
-                frameborder="0" width="1050px" height="700px"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- letbox -->
-    <div class="card__conteiner">
-      <div class="card">
-        <div class="image-bx">
-          <a id="img_small" href="../images/1.png" data-lightbox="roadtrip" data-title="My caption">
-            <img src="../images/1.png" alt="img" />
-          </a>
-          <a id="img_small" href="../images/2.png" data-lightbox="roadtrip" data-title="My caption">
-            <img src="../images/2.png" alt="img" />
-          </a>
-          <a id="img_small" href="../images/3.png" data-lightbox="roadtrip" data-title="My caption">
-            <img src="../images/3.png" alt="img" />
-          </a>
-        </div>
-        <div class="card__content">
-          <span class="price">
-            <a href="#">100000</a>
-          </span>
-          <span>
-            <ul>
-              <li>Address</li>
-              <li>Area</li>
-              <li>Type</li>
-            </ul>
-          </span>
-        </div>
-      </div>
-      <!--  -->
-      <div class="card">
-        <div class="image-bx"></div>
-        <div class="card__content">
-          <span class="price">
-            <a href="#">100000</a>
-          </span>
-          <span>
-            <ul>
-              <li>Address</li>
-              <li>Area</li>
-              <li>Type</li>
-            </ul>
-          </span>
-        </div>
-      </div>
-
-      <!--  -->
-      <div class="card">
-        <div class="image-bx"></div>
-        <div class="card__content">
-          <span class="price">
-            <a href="#">100000</a>
-          </span>
-          <span>
-            <ul>
-              <li>Address</li>
-              <li>Area</li>
-              <li>Type</li>
-            </ul>
-          </span>
-        </div>
-      </div>
-      <!--  -->
-      <div class="card">
-        <div class="image-bx"></div>
-        <div class="card__content">
-          <span class="price">
-            <a href="#">100000</a>
-          </span>
-          <span>
-            <ul>
-              <li>Address</li>
-              <li>Area</li>
-              <li>Type</li>
-            </ul>
-          </span>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer section -->
-  <footer class="footer">
-    <!-- Contact information -->
-    <div class="contacts">
-      <h3 class="contacts__heading">Контакти:</h3>
-      <p class="contacts__adress">
-        <i class="fa-solid fa-location-dot"></i>
-        51909, м. Кам'янське, вул. Г.Романової, 5
-      </p>
-      <!-- Phone numbers -->
-      <div class="contacts__tel">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:(098)-345-67-89" class="contacts__link">(093)-117-86-89</a>
-      </div>
-      <div class="contacts__tel">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:(098)-345-67-89" class="contacts__link">(098)-345-67-89</a>
-      </div>
-      <button id="open" class="btn-cta">Зворотній дзвінок</button>
-    </div>
-    <!-- Google Maps location -->
-    <iframe class="location"
-      src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- Social media links -->
-    <div class="socials">
-      <h2 class="socials__heading">Завжди на зв'язку:</h2>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="https://t.me/TheALLEYgroup" class="socials__link">
-            <i class="fa-brands fa-telegram"></i>
-            <span class="visually-hidden">telegram</span>
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking external CSS files for styling -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Linking Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>The ALLEY / Пошук нерухомості</title>
+    <!-- Linking favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!-- Linking Lightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <!-- Logo -->
+      <a href="../index.html" class="logo">
+        <img class="logo__img" src="../images/logo.svg" alt="logo" />
+      </a>
+      <!-- Navigation menu -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="../index.html" class="menu__link">Головна</a>
         </li>
-        <li class="socials__item">
-          <a href="https://www.facebook.com/AlleyaKamenskoe/" class="socials__link">
-            <i class="fa-brands fa-facebook-f"></i>
-            <span class="visually-hidden">facebook</span>
-          </a>
+        <li class="menu__item">
+          <a href="services.html" class="menu__link">Послуги</a>
         </li>
-        <li class="socials__item">
-          <a href="https://www.instagram.com/alleya__nedvizhimosti/" class="socials__link">
-            <i class="fa-brands fa-instagram"></i>
-            <span class="visually-hidden">instagram</span>
-          </a>
+        <li class="menu__item">
+          <a href="news.html" class="menu__link">Новини та статті</a>
+        </li>
+        <li class="menu__item">
+          <a href="search.html" class="menu__link">Пошук нерухомості</a>
         </li>
       </ul>
-    </div>
-    <!-- Copyright information -->
-    <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
-  </footer>
-  <div class="modal hide">
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <form action="#" onsubmit="sendEmailTelegram(event)">
-          <div id="close" class="modal__close">&times;</div>
-          <div class="modal__title">
-            Залишіть ваш контактний номер телефону і наш менеджер передзвонить
-            вам найближчим часом
+    </header>
+    <!-- Main content section -->
+    <main class="main">
+      <!-- Tabs for different property types -->
+      <div class="tabs-wrap tabs-wrap--small">
+        <div class="tabs">
+          <div class="tabs__content">
+            <!-- Radio buttons for selecting property type -->
+            <input type="radio" name="indicator" checked id="purchase" />
+            <input type="radio" name="indicator" id="sale" />
+            <input type="radio" name="indicator" id="lease" />
+            <!-- Tabs list -->
+            <div class="tabs__list tabs__list--small">
+              <!-- Labels for different property types -->
+              <label for="purchase" class="purchase">
+                <i class="fas fa-home"></i>
+                <span class="tabs__list-topic">Купівля</span>
+              </label>
+              <label for="sale" class="sale">
+                <i class="fa-solid fa-pen"></i>
+                <span class="tabs__list-topic">Продаж</span>
+              </label>
+              <label for="lease" class="lease">
+                <i class="fa-solid fa-building"></i>
+                <span class="tabs__list-topic">Оренда</span>
+              </label>
+              <!-- Indicator for active tab -->
+              <div class="indicator"></div>
+            </div>
+            <!-- Sections for different property types -->
+            <div class="tabs__section">
+              <!-- Purchase section with embedded iframe -->
+              <div class="purchase text">
+                <iframe
+                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <!-- Sale section with embedded iframe -->
+              <div class="sale text">
+                <iframe
+                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <!-- Lease section with embedded iframe -->
+              <div class="lease text">
+                <iframe
+                  src="https://mgagro.gismg.com/portal/apps/experiencebuilder/experience/?id=4fa4468aaf3c4114b87e370cb8faf0b3"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
           </div>
-          <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input" autocomplete="off" />
-          <input required placeholder="Ваш номер телефону" title="+380961234567" name="phone" type="tel"
-            class="modal__input" autocomplete="off" pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$" />
-          <button class="btn" type="submit">Перездвоніть мені</button>
-          <div class="form__send-result"></div>
-        </form>
+        </div>
+      </div>
+      <!-- Container for property cards -->
+      <div class="card__conteiner">
+        <!-- Property card 1 -->
+        <div class="card">
+          <!-- Images of the property -->
+          <div class="image-bx">
+            <!-- Lightbox links -->
+            <a
+              id="img_small"
+              href="../images/card/card_t/front.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_t/front.webp" alt="House" />
+            </a>
+            <!-- Additional images -->
+            <a
+              id="img_small"
+              href="../images/card/card_t/middel.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_t/middel.webp" alt="House" />
+            </a>
+            <!-- Additional images -->
+            <a
+              id="img_small"
+              href="../images/card/card_t/back.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_t/back.webp" alt="House" />
+            </a>
+          </div>
+          <!-- Property details -->
+          <div class="card__content">
+            <!-- Price and contact link -->
+            <span class="price">
+              <a href="tel:(093)-117-86-89">51 000 $</a>
+            </span>
+            <!-- Property details list -->
+            <span>
+              <ul>
+                <li>Курилівка</li>
+                <li>295 кв.м</li>
+                <li>Будинок</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <!-- Property card 2 -->
+        <div class="card">
+          <!-- Images of the property -->
+          <div class="image-bx">
+            <!-- Lightbox links -->
+            <a
+              id="img_small"
+              href="../images/card/card_one/front.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_one/front.webp" alt="House" />
+            </a>
+            <!-- Additional images -->
+            <a
+              id="img_small"
+              href="../images/card/card_one/middle.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_one/middle.webp" alt="House" />
+            </a>
+            <!-- Additional images -->
+            <a
+              id="img_small"
+              href="../images/card/card_one/back.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_one/back.webp" alt="House" />
+            </a>
+          </div>
+          <div class="card__content">
+            <span class="price">
+              <a href="tel:(093)-117-86-89">69 000$</a>
+            </span>
+            <span>
+              <ul>
+                <li>Кам'янське</li>
+                <li>145 кв.м</li>
+                <li>Будинок</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-bx">
+            <a
+              id="img_small"
+              href="../images/card/card_th/front.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_th/front.webp" alt="House" />
+            </a>
+            <a
+              id="img_small"
+              href="../images/card/card_th/middle.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_th/middle.webp" alt="House" />
+            </a>
+            <a
+              id="img_small"
+              href="../images/card/card_th/back.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_th/back.webp" alt="House" />
+            </a>
+          </div>
+          <div class="card__content">
+            <span class="price">
+              <a href="tel:(093)-117-86-89">120 000 $</a>
+            </span>
+            <span>
+              <ul>
+                <li>Дніпро</li>
+                <li>165 кв.м.</li>
+                <li>Будинок</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-bx">
+            <a
+              id="img_small"
+              href="../images/card/card_f/front.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_f/front.webp" alt="House" />
+            </a>
+            <a
+              id="img_small"
+              href="../images/card/card_f/middle.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_f/middle.webp" alt="House" />
+            </a>
+            <a
+              id="img_small"
+              href="../images/card/card_f/back.webp"
+              data-lightbox="roadtrip"
+              data-title="My caption"
+            >
+              <img src="../images/card/card_f/back.webp" alt="House" />
+            </a>
+          </div>
+          <div class="card__content">
+            <span class="price">
+              <a href="tel:(093)-117-86-89">240 000 $</a>
+            </span>
+            <span>
+              <ul>
+                <li>Єлізаветівка</li>
+                <li>300 кв.м</li>
+                <li>Будинок</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <!-- Contact information -->
+      <div class="contacts">
+        <h3 class="contacts__heading">Контакти:</h3>
+        <!-- Address -->
+        <p class="contacts__adress">
+          <i class="fa-solid fa-location-dot"></i>
+          51909, м. Кам'янське, вул. Г.Романової, 5
+        </p>
+        <!-- Phone numbers -->
+        <div class="contacts__tel">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(093)-117-86-89</a
+          >
+        </div>
+        <div class="contacts__tel">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(098)-345-67-89" class="contacts__link"
+            >(098)-345-67-89</a
+          >
+        </div>
+        <!-- Call back button -->
+        <button id="open" class="btn-cta">Зворотній дзвінок</button>
+      </div>
+      <!-- Google Maps embed -->
+      <iframe
+        class="location"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d740.8524574843296!2d34.60924034221229!3d48.51450651301045!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08130dad1b%3A0x26e2f7627eb89b40!2zOUEsINGD0LsuINCT0LDQu9C40L3RiyDQoNC-0LzQsNC90L7QstC-0LksIDnQkCwg0JrQsNC80LXQvdGB0LrQvtC1LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTE5MDk!5e0!3m2!1sru!2sua!4v1714401716152!5m2!1sru!2sua"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- Social media links -->
+      <div class="socials">
+        <h2 class="socials__heading">Завжди на зв'язку:</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="https://t.me/TheALLEYgroup" class="socials__link">
+              <i class="fa-brands fa-telegram"></i>
+              <span class="visually-hidden">telegram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              href="https://www.facebook.com/AlleyaKamenskoe/"
+              class="socials__link"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              href="https://www.instagram.com/alleya__nedvizhimosti/"
+              class="socials__link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Footer text -->
+      <p class="policy">© The ALLEY 2024. Всі права захищені.</p>
+    </footer>
+    <!-- Modal for callback request -->
+    <div class="modal hide">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <!-- Callback request form -->
+          <form action="#" onsubmit="sendEmailTelegram(event)">
+            <!-- Close button -->
+            <div id="close" class="modal__close">&times;</div>
+            <!-- Modal title -->
+            <div class="modal__title">
+              Залишіть ваш контактний номер телефону і наш менеджер передзвонить
+              вам найближчим часом
+            </div>
+            <!-- Input fields for name and phone number -->
+            <input
+              required
+              placeholder="Ваше ім'я"
+              name="name"
+              type="text"
+              class="modal__input"
+              autocomplete="off"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефону"
+              title="+380961234567"
+              name="phone"
+              type="tel"
+              class="modal__input"
+              autocomplete="off"
+              pattern="^\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$"
+            />
+            <!-- Submit button -->
+            <button class="btn" type="submit">Перездвоніть мені</button>
+            <!-- Form submission result message -->
+            <div class="form__send-result"></div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Light box -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
-    integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
-    integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../js/script.js"></script>
-</body>
-
+    <!-- Lightbox scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
+      integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+      integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom JavaScript file -->
+    <script src="../js/script.js"></script>
+  </body>
 </html>

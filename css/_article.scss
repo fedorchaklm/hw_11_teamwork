@@ -1,33 +1,56 @@
-// styles for article
+/*
+  Styles for the article section.
+  It sets the display, flex direction, gap, and color.
+*/
 .article {
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: $color-primary;
-
+  /*
+    Styles for the heading of the article.
+    It sets the font size, font weight, line height, and text alignment.
+  */
   &__heading {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
   }
-
+  /*
+    Styles for the body of the article.
+    It sets the display, justify content, and gap.
+  */
   &__body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
+    /*
+      Styles for the image within the article.
+      It sets the width to 100%.
+    */
     .article__img {
+      max-width: 50%;
+      max-height: 60%;
       width: 100%;
     }
-
+    /*
+      Modifier class for the special layout of the article body.
+      It changes the flex direction to column.
+    */
     &--special {
       flex-direction: column;
     }
-
+    /*
+      Styles for the description of the article.
+      It sets the font size and line height.
+    */
     .article__description {
+      // width: 100%;
       font-size: 1.3rem;
       line-height: 1.5;
     }
   }
+
+  max-width: calc(100vw - 20%);
 }

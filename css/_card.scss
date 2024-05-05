@@ -1,9 +1,18 @@
+/*
+  The .card__conteiner class styles the container for the property cards.
+  It sets up flexbox to horizontally center and vertically align the cards.
+  min-height is set to ensure that the container occupies at least 60% of the viewport height.
+*/
 .card__conteiner {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
-
+  /*
+  The .card class styles each individual property card.
+  It sets the position, width, height, padding, and flexbox properties.
+  The card is displayed as a column layout with space between elements.
+*/
   .card {
     position: relative;
     width: 320px;
@@ -13,7 +22,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    /*
+  The .image-bx class styles the container for the property images.
+  It sets the position, dimensions, background color, border radius, and overflow properties.
+  The image-bx pseudo-elements create decorative elements using box-shadow.
+*/
     .image-bx {
       position: relative;
       width: 100%;
@@ -51,7 +64,11 @@
       border-radius: 50%;
       box-shadow: -10px 10px 0 $bg-color-primary;
     }
-
+    /*
+  The .card__content class styles the content section of each property card.
+  It sets the position, dimensions, background color, border radius, and padding.
+  The ul within the card content is styled to change its color.
+*/
     .card__content {
       position: relative;
       width: 100%;
@@ -62,10 +79,16 @@
       padding: 0 35px;
 
       ul {
+        padding-top: 2%;
         color: $color-primary;
+        line-height: 1.2rem;
       }
     }
-
+    /*
+  The .price class styles the price section of each property card.
+  It sets the position, dimensions, background color, and border styles.
+  It also styles the anchor tag within the price section.
+*/
     .price {
       position: absolute;
       left: 0;
@@ -88,9 +111,12 @@
         font-weight: 600;
         color: $color-additional;
         text-align: center;
+        font-size: 0.8rem;
       }
     }
-
+    /*
+  The pseudo-elements for .price create decorative elements using box-shadow.
+*/
     .price::before {
       content: "";
       position: absolute;

@@ -1,4 +1,7 @@
-  /* Fixed positioning for the header */
+/*
+  Fixed positioning for the header.
+  It fixes the header at the top of the viewport while scrolling.
+*/
 .header {
   position: fixed;
   top: 0;
@@ -12,29 +15,29 @@
   font-size: 1.2rem;
   background-color: $bg-color-primary;
   padding: 0 10%;
-  z-index: 10;
-
+  z-index: 10; /* Ensures the header appears above other content */
+  /* Styles for the logo */
   .logo {
     width: 130px;
     height: 100px;
   }
 
-  // styles for navigation menu
+  /* Styles for the navigation menu */
   .menu {
     color: $color-secondary;
     display: grid;
     grid-template-columns: repeat(5, auto);
-
+    /* Styles for each menu item */
     &__item {
       transition: all 0.35s;
-
+      /* Adds a slash separator before each item except the first one */
       &:not(:first-child)::before {
         color: #ebebeb;
         content: "/";
         display: inline-block;
         margin: 0 8px;
       }
-
+      /* Styles on hover */
       &:hover {
         color: #ebebeb;
       }

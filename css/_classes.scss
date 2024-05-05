@@ -1,4 +1,8 @@
-// styles for hidden elements
+/*
+  Styles for visually hidden elements.
+  It positions the element absolutely, sets its dimensions to 1px width and height,
+  and hides it off-screen while still accessible to screen readers.
+*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -8,8 +12,7 @@
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
