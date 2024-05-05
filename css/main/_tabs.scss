@@ -1,5 +1,8 @@
+/* Styles for the tabs */
 .tabs-wrap {
   padding: 150px 10%;
+
+  /* Styles for the tabs */
   .tabs {
     display: flex;
     flex-direction: column;
@@ -12,6 +15,7 @@
     padding: 20px 2%;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
 
+    /* Styles for the title of each tab */
     .tabs__title {
       color: $color-primary;
       font-size: 1.5rem;
@@ -19,18 +23,21 @@
       margin: 0 70% 20px 0;
     }
 
+    /* Styles for the title of each tab */
     .tabs__content {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
 
+      /* Styles for the list of tabs */
       .tabs__list {
         display: flex;
         flex-direction: column;
         position: relative;
         width: 30%;
 
+        /* Styles for each tab label */
         label {
           height: 60px;
           font-size: 1.2rem;
@@ -44,21 +51,25 @@
           transition: all 0.2s ease;
           min-width: 330px;
 
+          /* Styles for icon within tab label */
           i {
             width: 26px;
             height: 22px;
           }
 
+          /* Hover styles for tab label */
           &:hover {
             color: $color-primary;
           }
         }
       }
 
+      /* Styles for small tabs */
       .tabs__list--small {
         width: 10%;
       }
 
+      /* Styles for the indicator line */
       .indicator {
         position: absolute;
         height: 60px;
@@ -70,113 +81,128 @@
         transition: all 0.2s;
       }
 
+      /* Styles for the content sections within tabs */
       .tabs__section {
         width: 80%;
         height: 100%;
         line-height: 2;
 
+        /* Text styles */
         .text {
           text-indent: 20px;
           color: $color-primary;
           display: none;
-
-          iframe {
-            width: 1100px;
-            height: 800px;
-          }
         }
 
+        /* Styles for the 'purchase' section */
         .purchase {
           display: block;
         }
 
+        /* Styles for the title of each content section */
         .tabs__section-title {
           font-size: 25px;
           font-weight: 500;
           margin-bottom: 10px;
         }
 
+        /* Paragraph styles */
         p {
           text-align: justify;
         }
       }
     }
 
+    /* Hide input elements */
     input {
       display: none;
     }
   }
 }
+
+/* Additional styles for small tabs container */
 .tabs-wrap--small {
   padding-bottom: 0;
 }
-#purchase:checked ~ .tabs__list .purchase,
-#sale:checked ~ .tabs__list .sale,
-#lease:checked ~ .tabs__list .lease,
-#preparation:checked ~ .tabs__list .preparation,
-#consultation:checked ~ .tabs__list .consultation,
-#evaluation:checked ~ .tabs__list .evaluation,
-#passports:checked ~ .tabs__list .passports,
-#privatization:checked ~ .tabs__list .privatization,
-#arrest:checked ~ .tabs__list .arrest,
-#support:checked ~ .tabs__list .support {
+
+/* Styles for active tabs and their indicators */
+#purchase:checked~.tabs__list .purchase,
+#sale:checked~.tabs__list .sale,
+#lease:checked~.tabs__list .lease,
+#preparation:checked~.tabs__list .preparation,
+#consultation:checked~.tabs__list .consultation,
+#evaluation:checked~.tabs__list .evaluation,
+#passports:checked~.tabs__list .passports,
+#privatization:checked~.tabs__list .privatization,
+#arrest:checked~.tabs__list .arrest,
+#support:checked~.tabs__list .support {
   color: $color-additional;
 }
 
-#purchase:checked ~ .tabs__list .indicator {
+/* Indicator position for active tabs */
+#purchase:checked~.tabs__list .indicator {
   top: 0;
 }
 
-#sale:checked ~ .tabs__list .indicator {
+#sale:checked~.tabs__list .indicator {
   top: 60px;
 }
 
-#lease:checked ~ .tabs__list .indicator {
+#lease:checked~.tabs__list .indicator {
   top: 120px;
 }
-#privatization:checked ~ .tabs__list .indicator {
+
+#privatization:checked~.tabs__list .indicator {
   top: 180px;
 }
-#arrest:checked ~ .tabs__list .indicator {
+
+#arrest:checked~.tabs__list .indicator {
   top: 240px;
 }
-#evaluation:checked ~ .tabs__list .indicator {
+
+#evaluation:checked~.tabs__list .indicator {
   top: 300px;
 }
-#consultation:checked ~ .tabs__list .indicator {
+
+#consultation:checked~.tabs__list .indicator {
   top: 360px;
 }
-#preparation:checked ~ .tabs__list .indicator {
+
+#preparation:checked~.tabs__list .indicator {
   top: 420px;
 }
-#passports:checked ~ .tabs__list .indicator {
+
+#passports:checked~.tabs__list .indicator {
   top: 480px;
 }
-#support:checked ~ .tabs__list .indicator {
+
+#support:checked~.tabs__list .indicator {
   top: 540px;
 }
 
-#purchase:checked ~ .tabs__section .purchase,
-#sale:checked ~ .tabs__section .sale,
-#lease:checked ~ .tabs__section .lease,
-#preparation:checked ~ .tabs__section .preparation,
-#consultation:checked ~ .tabs__section .consultation,
-#evaluation:checked ~ .tabs__section .evaluation,
-#passports:checked ~ .tabs__section .passports,
-#privatization:checked ~ .tabs__section .privatization,
-#arrest:checked ~ .tabs__section .arrest,
-#support:checked ~ .tabs__section .support {
+/* Styles for displaying active tab content */
+#purchase:checked~.tabs__section .purchase,
+#sale:checked~.tabs__section .sale,
+#lease:checked~.tabs__section .lease,
+#preparation:checked~.tabs__section .preparation,
+#consultation:checked~.tabs__section .consultation,
+#evaluation:checked~.tabs__section .evaluation,
+#passports:checked~.tabs__section .passports,
+#privatization:checked~.tabs__section .privatization,
+#arrest:checked~.tabs__section .arrest,
+#support:checked~.tabs__section .support {
   display: block;
 }
 
-#sale:checked ~ .tabs__section .purchase,
-#lease:checked ~ .tabs__section .purchase,
-#preparation:checked ~ .tabs__section .purchase,
-#consultation:checked ~ .tabs__section .purchase,
-#evaluation:checked ~ .tabs__section .purchase,
-#passports:checked ~ .tabs__section .purchase,
-#privatization:checked ~ .tabs__section .purchase,
-#arrest:checked ~ .tabs__section .purchase,
-#support:checked ~ .tabs__section .purchase {
+/* Styles for hiding content of other tabs */
+#sale:checked~.tabs__section .purchase,
+#lease:checked~.tabs__section .purchase,
+#preparation:checked~.tabs__section .purchase,
+#consultation:checked~.tabs__section .purchase,
+#evaluation:checked~.tabs__section .purchase,
+#passports:checked~.tabs__section .purchase,
+#privatization:checked~.tabs__section .purchase,
+#arrest:checked~.tabs__section .purchase,
+#support:checked~.tabs__section .purchase {
   display: none;
 }
