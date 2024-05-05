@@ -6,9 +6,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: grid;
-  grid-template-columns: 65px auto;
-  grid-template-rows: 100px;
+  display: flex;
+  height: 100px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -24,9 +23,16 @@
 
   /* Styles for the navigation menu */
   .menu {
-    color: $color-secondary;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+    &__btn {
+      display: none;
+    }
+
+    &__list {
+      color: $color-secondary;
+      display: flex;
+      gap: 10px;
+    }
+
     /* Styles for each menu item */
     &__item {
       transition: all 0.35s;
@@ -40,6 +46,28 @@
       /* Styles on hover */
       &:hover {
         color: #ebebeb;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    .menu {
+      &__btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+
+      &__list {
+        display: none;
+
+        &.open {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }

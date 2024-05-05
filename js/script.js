@@ -65,38 +65,6 @@ function every 3000 milliseconds (3 seconds). This interval is stored in the `mo
 variable. */
 const modalTimerId = setInterval(openModal, 3000);
 
-const imgs = document.querySelectorAll(".slider .imgs img");
-const next = document.querySelector(".slider .buttons .next");
-const prev = document.querySelector(".slider .buttons .prev");
-
-let current_slide = [...imgs].findIndex(img => img.classList.contains('current'));
-
-/* The code block you provided is handling the functionality for the "Next" button in a slider. Here's
-a breakdown of what it does: */
-next.addEventListener("click", function () {
-  imgs[current_slide].style.opacity = 0;
-  if (current_slide == imgs.length - 1) {
-    current_slide = 0;
-  } else {
-    current_slide++;
-  }
-  imgs[current_slide].style.opacity = 1;
-});
-
-/* The code block you provided is handling the functionality for the "Previous" button in a slider.
-Here's a breakdown of what it does: */
-prev.addEventListener("click", function () {
-  imgs[current_slide].style.opacity = 0;
-  if (current_slide == 0) {
-    current_slide = imgs.length - 1;
-  } else {
-    current_slide--;
-  }
-  imgs[current_slide].style.opacity = 1;
-});
-
-
-
 /* The code block you provided is setting up a connection to the Telegram API for sending messages. */
 const TelegramBotToken = '7078321427:AAHAwtID5m9wf-xgoA-SvZHFy3d7kkF6YmA';
 const TelegramChatId = '@TheALLEYgroup';
@@ -181,3 +149,12 @@ async function sendEmailTelegram(event) {
   }
 
 }
+
+let burger = document.getElementById("burger");
+let menuList = document.getElementById("menuList");
+
+burger.addEventListener("click", function () {
+  burger.classList.toggle("active");
+  menuList.classList.toggle("open");
+});
+

@@ -4,10 +4,11 @@
 @import "tabs"; // Import styles for tabs
 @import "parallax"; // Import styles for parallax effect
 @import "slider"; // Import styles for slider
+@import "about"; // Import styles for about
 @import "offers"; // Import styles for offers section
 @import "news"; // Import styles for news section
 @import "article"; // Import styles for article section
-@import "card"; // Import styles for card 
+@import "card"; // Import styles for card
 
 /*
   The .main class styles the main section of the page.
@@ -25,44 +26,7 @@ html {
   scroll-behavior: smooth;
 }
 /*
-  The .conteiner-k class styles a container element.
+  The .about-wrap class styles a container element.
   It sets the margin, display, flex direction, and styles for the content inside.
 */
-.conteiner-k {
-  margin: 5% 10%;
-  display: flex;
-  flex-direction: row;
-  /*
-    Styles for the content inside the container.
-    It sets the display, flex direction, justify content, and styles for paragraphs and images.
-  */
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-    /*
-      Styles for paragraphs.
-      It sets the width, margin, padding, line height, text alignment, color, and text indent.
-    */
-    p {
-      width: 75%;
-      margin-left: 3%;
-      padding: 1% 5%;
-      line-height: 2rem;
-      text-align: justify;
-      color: $color-primary;
-      text-indent: 10%;
-    }
-    /*
-      Styles for images.
-      It sets the max width, max height, border radius, and box shadow.
-    */
-    img {
-      max-width: 250px;
-      max-height: 250px;
-      border-radius: 50%;
-      box-shadow: 0 0 10px $color-secondary;
-    }
-  }
-}
