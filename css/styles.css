@@ -1,0 +1,935 @@
+/*
+  Defines font face for Merriweather font.
+*/
+@font-face {
+  font-family: "Merriweather"; /* Specifies the font family name */
+  src: url("../fonts/Merriweather-Regular.ttf"); /* Specifies the path to the font file */
+}
+/*
+  Defines color variables.
+*/
+/* Primary text color */
+/* Secondary text color */
+/* Additional color */
+/* Background color */
+/*
+  Defines index variable for responsive design.
+*/
+/* Calculates index based on viewport width and height */
+/*
+  Mixin for creating a news grid layout with a specified number of columns.
+  Parameters:
+    - $times: Number of columns in the grid.
+*/
+/*
+  Styles for visually hidden elements.
+  It positions the element absolutely, sets its dimensions to 1px width and height,
+  and hides it off-screen while still accessible to screen readers.
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+  Fixed positioning for the header.
+  It fixes the header at the top of the viewport while scrolling.
+*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #1a1a1c;
+  padding: 0 10%;
+  z-index: 10; /* Ensures the header appears above other content */
+  /* Styles for the logo */
+  /* Styles for the navigation menu */
+}
+.header .logo {
+  width: 130px;
+  height: 100px;
+}
+.header .menu {
+  /* Styles for each menu item */
+}
+.header .menu__btn {
+  display: none;
+}
+.header .menu__list {
+  color: #ffcc01;
+  display: flex;
+  gap: 10px;
+}
+.header .menu__item {
+  /* Styles on hover */
+}
+.header .menu__item:hover {
+  color: #ebebeb;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 0 5%;
+  }
+  .header .menu__btn {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+  .header .menu__list {
+    display: none;
+    margin-top: 130px;
+  }
+  .header .menu__list.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*
+  This SCSS file imports styles from other partial files: "tabs", "parallax", "slider", "offers", and "news".
+*/
+/* Styles for the tabs */
+.tabs-wrap {
+  padding: 150px 10%;
+  /* Styles for the tabs */
+}
+.tabs-wrap .tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 800px;
+  min-height: 50vh;
+  width: 100%;
+  background-color: #1a1a1c;
+  border-radius: 12px;
+  padding: 20px 2%;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+  /* Styles for the title of each tab */
+  /* Styles for the title of each tab */
+  /* Hide input elements */
+}
+.tabs-wrap .tabs .tabs__title {
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 70% 20px 0;
+}
+.tabs-wrap .tabs .tabs__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* Styles for the list of tabs */
+  /* Styles for small tabs */
+  /* Styles for the indicator line */
+  /* Styles for the content sections within tabs */
+}
+.tabs-wrap .tabs .tabs__content .tabs__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 330px;
+  /* Styles for each tab label */
+}
+.tabs-wrap .tabs .tabs__content .tabs__list label {
+  min-height: 60px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 12px;
+  line-height: 2.5;
+  cursor: pointer;
+  padding-left: 2.5%;
+  color: #ffcc01;
+  z-index: 1;
+  transition: all 0.2s ease;
+  /* Styles for icon within tab label */
+  /* Hover styles for tab label */
+}
+.tabs-wrap .tabs .tabs__content .tabs__list label i {
+  width: 26px;
+  height: 22px;
+}
+.tabs-wrap .tabs .tabs__content .tabs__list label:hover {
+  color: #fefefe;
+}
+.tabs-wrap .tabs .tabs__content .tabs__list--small {
+  width: 10%;
+}
+.tabs-wrap .tabs .tabs__content .indicator {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffcc01;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.tabs-wrap .tabs .tabs__content .tabs__section {
+  width: 80%;
+  height: 100%;
+  line-height: 3;
+  text-align: justify;
+  /* Text styles */
+  /* Styles for the 'purchase' section */
+  /* Styles for the title of each content section */
+  /* Paragraph styles */
+}
+.tabs-wrap .tabs .tabs__content .tabs__section .text {
+  color: #fefefe;
+  display: none;
+}
+.tabs-wrap .tabs .tabs__content .tabs__section .text iframe {
+  width: 1100px;
+  height: 800px;
+}
+.tabs-wrap .tabs .tabs__content .tabs__section .purchase {
+  display: block;
+}
+.tabs-wrap .tabs .tabs__content .tabs__section .tabs__section-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.tabs-wrap .tabs .tabs__content .tabs__section p {
+  text-align: justify;
+}
+.tabs-wrap .tabs .tabs__content--spec {
+  align-items: center;
+}
+.tabs-wrap .tabs input {
+  display: none;
+}
+
+/* Additional styles for small tabs container */
+.tabs-wrap--small {
+  padding-bottom: 0;
+}
+
+/* Styles for active tabs and their indicators */
+#purchase:checked ~ .tabs__list .purchase,
+#sale:checked ~ .tabs__list .sale,
+#lease:checked ~ .tabs__list .lease,
+#preparation:checked ~ .tabs__list .preparation,
+#consultation:checked ~ .tabs__list .consultation,
+#evaluation:checked ~ .tabs__list .evaluation,
+#passports:checked ~ .tabs__list .passports,
+#privatization:checked ~ .tabs__list .privatization,
+#arrest:checked ~ .tabs__list .arrest,
+#support:checked ~ .tabs__list .support {
+  color: #2b2a29;
+}
+
+/* Indicator position for active tabs */
+#purchase:checked ~ .tabs__list .indicator {
+  top: 0;
+}
+
+#sale:checked ~ .tabs__list .indicator {
+  top: 60px;
+}
+
+#lease:checked ~ .tabs__list .indicator {
+  top: 120px;
+}
+
+#privatization:checked ~ .tabs__list .indicator {
+  top: 180px;
+}
+
+#arrest:checked ~ .tabs__list .indicator {
+  top: 240px;
+}
+
+#evaluation:checked ~ .tabs__list .indicator {
+  top: 300px;
+}
+
+#consultation:checked ~ .tabs__list .indicator {
+  top: 360px;
+}
+
+#preparation:checked ~ .tabs__list .indicator {
+  top: 420px;
+}
+
+#passports:checked ~ .tabs__list .indicator {
+  top: 480px;
+}
+
+#support:checked ~ .tabs__list .indicator {
+  top: 540px;
+}
+
+/* Styles for displaying active tab content */
+#purchase:checked ~ .tabs__section .purchase,
+#sale:checked ~ .tabs__section .sale,
+#lease:checked ~ .tabs__section .lease,
+#preparation:checked ~ .tabs__section .preparation,
+#consultation:checked ~ .tabs__section .consultation,
+#evaluation:checked ~ .tabs__section .evaluation,
+#passports:checked ~ .tabs__section .passports,
+#privatization:checked ~ .tabs__section .privatization,
+#arrest:checked ~ .tabs__section .arrest,
+#support:checked ~ .tabs__section .support {
+  display: block;
+}
+
+/* Styles for hiding content of other tabs */
+#sale:checked ~ .tabs__section .purchase,
+#lease:checked ~ .tabs__section .purchase,
+#preparation:checked ~ .tabs__section .purchase,
+#consultation:checked ~ .tabs__section .purchase,
+#evaluation:checked ~ .tabs__section .purchase,
+#passports:checked ~ .tabs__section .purchase,
+#privatization:checked ~ .tabs__section .purchase,
+#arrest:checked ~ .tabs__section .purchase,
+#support:checked ~ .tabs__section .purchase {
+  display: none;
+}
+
+.layers-wrap {
+  position: relative;
+}
+.layers-wrap .layers {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.layers-wrap .layers .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 2;
+}
+.layers-wrap .layers .layers__header {
+  z-index: 1;
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  will-change: transform;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.55;
+  font-weight: 700;
+  text-shadow: 0 0 15px #ffcc01;
+}
+.layers-wrap .layers .layers__header .layers__caption {
+  font-size: calc((1vw + 1vh) * 2.5);
+  letter-spacing: calc((1vw + 1vh) / 2.25);
+}
+.layers-wrap .layers .layers__header .layers__title {
+  font-size: calc((1vw + 1vh) / 1.175);
+  letter-spacing: calc((1vw + 1vh) / 3.5);
+  margin-bottom: calc((1vw + 1vh) * 0.5);
+}
+.layers-wrap .layers .layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  z-index: 0;
+}
+.layers-wrap .layers .layers__middle {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers-wrap .layers .layers__front {
+  transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+}
+
+.slider {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider__heading {
+  text-align: center;
+  text-shadow: -1px -1px 0 #000;
+}
+.slider .imgs {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.slider .imgs img {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.6s;
+  width: 80%;
+  height: 500px;
+}
+.slider .imgs .current {
+  opacity: 1;
+}
+.slider .buttons {
+  text-align: center;
+}
+.slider .buttons button {
+  margin: 20px 50px 0;
+  width: 75px;
+  height: 75px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.slider .buttons button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.slider .buttons .prev {
+  background: url("../images/arrow_left.svg") center center no-repeat;
+  background-size: cover;
+}
+.slider .buttons .next {
+  background: url("../images/arrow_right.svg") center center no-repeat;
+  background-size: cover;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 10%;
+  /*
+      Styles for paragraphs.
+      It sets the width, margin, padding, line height, text alignment, color, and text indent.
+    */
+  /*
+      Styles for images.
+      It sets the max width, max height, border radius, and box shadow.
+    */
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+}
+.about__info {
+  margin-left: 3%;
+  padding: 1% 5%;
+  line-height: 3rem;
+  text-align: justify;
+  color: #fefefe;
+  text-indent: 10%;
+}
+.about__img {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffcc01;
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+}
+.offers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  justify-items: center;
+  padding: 20px 9%;
+}
+.offers__item {
+  position: relative;
+  width: 80%;
+  min-width: 262px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.offers__item .container-sm {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 5;
+}
+.offers__item .offers__img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.offers__item:hover .offers__img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+  .offers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px);
+    row-gap: 20px;
+  }
+}
+.news {
+  display: grid;
+  justify-content: center;
+  row-gap: 50px;
+  margin-top: 100px;
+  padding: 50px 10%;
+}
+.news__primary {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates columns with equal width */
+  -moz-column-gap: 20px;
+       column-gap: 20px; /* Sets the gap between columns */
+  padding: 20px 2%; /* Adds padding around the grid */
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); /* Adds a box shadow effect */
+}
+.news__secondary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates columns with equal width */
+  -moz-column-gap: 20px;
+       column-gap: 20px; /* Sets the gap between columns */
+  padding: 20px 2%; /* Adds padding around the grid */
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); /* Adds a box shadow effect */
+}
+.news__ternary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates columns with equal width */
+  -moz-column-gap: 20px;
+       column-gap: 20px; /* Sets the gap between columns */
+  padding: 20px 2%; /* Adds padding around the grid */
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); /* Adds a box shadow effect */
+}
+.news__additional {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates columns with equal width */
+  -moz-column-gap: 20px;
+       column-gap: 20px; /* Sets the gap between columns */
+  padding: 20px 2%; /* Adds padding around the grid */
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); /* Adds a box shadow effect */
+}
+
+/*
+  The .card__conteiner class styles the container for the property cards.
+  It sets up flexbox to horizontally center and vertically align the cards.
+  min-height is set to ensure that the container occupies at least 60% of the viewport height.
+*/
+.card__conteiner {
+  /*
+    The .card class styles each individual property card.
+    It sets the position, width, height, padding, and flexbox properties.
+    The card is displayed as a column layout with space between elements.
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.card__conteiner .card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  padding: 0 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*
+    The .image-bx class styles the container for the property images.
+    It sets the position, dimensions, background color, border radius, and overflow properties.
+    The image-bx pseudo-elements create decorative elements using box-shadow.
+  */
+  /*
+    The .card__content class styles the content section of each property card.
+    It sets the position, dimensions, background color, border radius, and padding.
+    The ul within the card content is styled to change its color.
+  */
+  /*
+    The .price class styles the price section of each property card.
+    It sets the position, dimensions, background color, and border styles.
+    It also styles the anchor tag within the price section.
+  */
+  /*
+    The pseudo-elements for .price create decorative elements using box-shadow.
+  */
+}
+.card__conteiner .card .image-bx {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #2b2a29;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card__conteiner .card .image-bx a img {
+  height: 100%;
+}
+.card__conteiner .card .image-bx::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #1a1a1c;
+}
+.card__conteiner .card .image-bx::after {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #1a1a1c;
+}
+.card__conteiner .card .card__content {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: #2b2a29;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  padding: 0 35px;
+}
+.card__conteiner .card .card__content ul {
+  padding-top: 2%;
+  color: #fefefe;
+  line-height: 1.2rem;
+}
+.card__conteiner .card .price {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  width: 50%;
+  height: 80px;
+  background-color: #2b2a29;
+  border-top: 10px solid #1a1a1c;
+  border-right: 10px solid #1a1a1c;
+  border-top-right-radius: 25px;
+}
+.card__conteiner .card .price a {
+  position: relative;
+  background: #ffcc01;
+  padding: 10px 20px;
+  margin: 15px 15px;
+  display: block;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2b2a29;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.card__conteiner .card .price::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 #1a1a1c;
+}
+.card__conteiner .card .price::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #2b2a29;
+}
+
+/*
+  Styles for the article section.
+  It sets the display, flex direction, gap, and color.
+*/
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fefefe;
+  /*
+    Styles for the heading of the article.
+    It sets the font size, font weight, line height, and text alignment.
+  */
+  /*
+    Styles for the body of the article.
+    It sets the display, justify content, and gap.
+  */
+  max-width: calc(100vw - 20%);
+}
+.article__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+.article__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /*
+    Styles for the image within the article.
+    It sets the width to 100%.
+  */
+  /*
+    Modifier class for the special layout of the article body.
+    It changes the flex direction to column.
+  */
+  /*
+    Styles for the description of the article.
+    It sets the font size and line height.
+  */
+}
+.article__body .article__img {
+  width: 100%;
+  align-self: center;
+  border-radius: 4px;
+}
+.article__body .article__img--special {
+  width: 50%;
+  align-self: start;
+  max-height: 600px;
+}
+.article__body--special {
+  flex-direction: column;
+}
+.article__body .article__description {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/*
+  The .main class styles the main section of the page.
+  It sets the background color and minimum height to 100vh.
+*/
+.main {
+  background-color: #1a1a1c;
+  min-height: 100vh;
+}
+
+/*
+  Styles for the HTML element.
+  It sets the scroll behavior to smooth.
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+  The .about-wrap class styles a container element.
+  It sets the margin, display, flex direction, and styles for the content inside.
+*/
+/*
+  The .footer class styles the footer section of the page.
+  It uses CSS Grid for layout, with 3 columns and 4 rows.
+  It sets the display, grid template columns and rows, justify content, column gap, height, padding, color, background color, and font family.
+*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 200px;
+  padding: 30px 10% 10px 10%;
+  color: #fefefe;
+  background-color: #1a1a1c;
+  font-family: "Times New Roman", Times, serif;
+  /*
+    The .contacts class styles the contact information section.
+    It sets the display, grid template rows, grid column, grid row, row gap, and styles for the call-to-action button.
+  */
+  /*
+    The .location class styles the location information section.
+    It sets the grid column, grid row, and width.
+  */
+  /*
+    The .socials class styles the social media links section.
+    It sets the grid column, grid row, display, justify items, row gap, and styles for the social media icons.
+  */
+  /*
+    The .policy class styles the copyright information section.
+    It sets the grid column, grid row, justify self, align self, font size, and color.
+  */
+}
+.footer .contacts {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column: 1/2;
+  grid-row: 1/4;
+  row-gap: 10px;
+}
+.footer .contacts .btn-cta {
+  width: 20%;
+  height: 40px;
+  min-width: 250px;
+  padding: 0 10%;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1c;
+  background-color: #ffcc01;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.footer .location {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  width: 100%;
+}
+.footer .socials {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  /*
+    The .socials__list class styles the list of social media links.
+    It sets the display, grid template columns, and column gap.
+  */
+  /*
+    Styles for social media icons.
+  */
+}
+.footer .socials__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer .socials .fa-brands {
+  color: #ffcc01;
+}
+.footer .policy {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  justify-self: center;
+  align-self: center;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 30px 5% 10px 5%;
+  }
+}
+/*
+  Styles for modal component.
+*/
+.modal {
+  position: fixed; /* Fixes the modal position */
+  top: 0; /* Aligns the modal to the top of the viewport */
+  left: 0; /* Aligns the modal to the left of the viewport */
+  z-index: 1050; /* Sets the stacking order */
+  display: none; /* Hides the modal by default */
+  width: 100%; /* Sets the width to cover the entire viewport */
+  height: 100%; /* Sets the height to cover the entire viewport */
+  overflow: hidden; /* Hides the overflow content */
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background */
+  /* Styles for modal dialog */
+}
+.modal.show {
+  display: block; /* Shows the modal when the 'show' class is applied */
+}
+.modal.hide {
+  display: none; /* Hides the modal when the 'hide' class is applied */
+}
+.modal__dialog {
+  max-width: 500px; /* Sets the maximum width of the modal dialog */
+  margin: 120px auto; /* Centers the modal vertically with some top margin */
+  /* Styles for modal content */
+  /* Styles for modal close button */
+  /* Styles for modal title */
+  /* Styles for modal input */
+  /* Styles for modal button */
+}
+.modal__dialog .modal__content {
+  position: relative; /* Sets the content position */
+  width: 100%; /* Sets the content width */
+  padding: 40px; /* Adds padding around the content */
+  color: #fefefe; /* Sets the text color */
+  background-color: #1a1a1c; /* Sets the background color */
+  box-shadow: 0 4px 15px #fefefe; /* Adds a box shadow effect */
+  border-radius: 4px; /* Adds rounded corners */
+  max-height: 80vh; /* Sets the maximum height of the content */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+.modal__dialog .modal__close {
+  position: absolute; /* Sets the close button position */
+  top: 8px; /* Positions the close button from the top */
+  right: 14px; /* Positions the close button from the right */
+  font-size: 30px; /* Sets the font size of the close button */
+  opacity: 0.5; /* Sets the opacity of the close button */
+  font-weight: 700; /* Sets the font weight of the close button */
+  background-color: transparent; /* Sets the background color of the close button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+.modal__dialog .modal__title {
+  text-align: center; /* Centers the modal title */
+  font-size: 1.3rem; /* Sets the font size of the modal title */
+}
+.modal__dialog .modal__input {
+  display: block; /* Displays the input as a block element */
+  margin: 20px auto 20px auto; /* Adds margin around the input */
+  width: 280px; /* Sets the width of the input */
+  height: 50px; /* Sets the height of the input */
+  color: #1a1a1c; /* Sets the text color of the input */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a box shadow effect */
+  font-size: 1rem; /* Sets the font size of the input */
+  text-align: center; /* Centers the text in the input */
+  padding: 0 20px; /* Adds padding to the input */
+  outline: 0; /* Removes the default outline */
+}
+.modal__dialog .btn {
+  display: block; /* Displays the button as a block element */
+  width: 280px; /* Sets the width of the button */
+  margin: 0 auto; /* Centers the button horizontally */
+  height: 50px; /* Sets the height of the button */
+  color: #1a1a1c; /* Sets the text color of the button */
+  font-weight: 700; /* Sets the font weight of the button */
+  background-color: #ffcc01; /* Sets the background color of the button */
+  font-size: 1rem; /* Sets the font size of the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}/*# sourceMappingURL=styles.css.map */
